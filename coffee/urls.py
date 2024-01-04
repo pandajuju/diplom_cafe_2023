@@ -1,22 +1,17 @@
-from django.conf import settings
-from django.conf.urls.static import static
 from django.urls import path
-from . import views
-# from .views import IndexPage
+from .views import *
 
 app_name = 'coffee'
 
 urlpatterns = [
-    path('home/', views.home, name='home'),
-    path('menu/', views.menu, name='menu'),
-    path('services/', views.services, name='services'),
-    path('blog/', views.blog, name='blog'),
-    path('blog/<int:pk>/', views.blog_single, name='blog_single'),
-    path('about/', views.about, name='about'),
-    path('shop/', views.shop, name='shop'),
-    path('card/', views.card, name='card'),
-    path('checkout/', views.checkout, name='checkout'),
-    path('contact/', views.contact, name='contact'),
-
+    path('', IndexPage.as_view(), name='home'),
+    path('menu/', MenuPage.as_view(), name='menu'),
+    path('services/', ServicesPage.as_view(), name='services'),
+    path('blog/', BlogPage.as_view(), name='blog'),
+    path('blog/<int:pk>/', BlogSinglePage.as_view(), name='blog_single'),
+    path('about/', AboutPage.as_view(), name='about'),
+    path('contact/', ContactPage.as_view(), name='contact'),
+    path('shop/', ShopPage.as_view(), name='shop'),
+    path('card/', CardPage.as_view(), name='card'),
+    path('checkout/', CheckoutPage.as_view(), name='checkout'),
 ]
-

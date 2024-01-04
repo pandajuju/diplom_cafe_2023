@@ -1,19 +1,19 @@
 {% extends 'index.html' %}
+{% load static %}
 
 {% block content %}
 
-    {% load static %}
-
     <section class="home-slider owl-carousel">
 
-        <div class="slider-item" style="background-image: url('{% static "assets/images/bg_3.jpg" %}');" data-stellar-background-ratio="0.5">
+        <div class="slider-item" style="background-image: url('{% static "assets/images/bg_3.jpg" %}');"
+             data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text justify-content-center align-items-center">
 
                     <div class="col-md-7 col-sm-12 text-center ftco-animate">
                         <h1 class="mb-3 mt-5 bread">Contact Us</h1>
-                        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span>
+                        <p class="breadcrumbs"><span class="mr-2"><a href="/">Home</a></span>
                             <span>Contact</span></p>
                     </div>
 
@@ -46,25 +46,26 @@
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6 ftco-animate">
-                    <form action="#" class="contact-form">
+                    <form action="" method="post" class="contact-form">
+                        {% csrf_token %}
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name">
+                                    <input type="text" class="form-control" placeholder="Your Name" name = 'name'>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Email">
+                                    <input type="text" class="form-control" placeholder="Your Email" name = 'email'>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="text" class="form-control" placeholder="Subject" name="subject">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control"
-                                      placeholder="Message"></textarea>
+                            <textarea name="message" id="" cols="30" rows="7" class="form-control"
+                                      placeholder="Message" ></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">

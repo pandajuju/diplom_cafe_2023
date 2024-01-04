@@ -67,3 +67,24 @@ class Comment(models.Model):
         return f'Comment by {self.author.username} on {self.post.title}'
 
 
+class Reservation(models.Model):
+    name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    date = models.DateField()
+    time = models.TimeField()
+    phone_regex = RegexValidator(regex=r'^\+?\d{7,12}$',
+                                 message='Phone number should be in format: +380xxxxxxxxx')
+    phone = models.CharField(validators=[phone_regex, ], max_length=20)
+    message = models.TextField(max_length=500, blank=True)
+
+    is_precessed = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f'{self.name} - {self.phone}'
+
+    class Meta:
+        ordering = ('-created_at', )
+
+

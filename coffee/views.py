@@ -1,48 +1,105 @@
-from django.shortcuts import render
+import smtplib
+
+from django.contrib import messages
+from django.shortcuts import render, redirect
 from django.core.paginator import Paginator
 from django.views.generic import TemplateView
+
+# from .forms import Reservation
 from .models import Post
+from django.core.mail import BadHeaderError, send_mail
+from django.http import HttpResponseRedirect, HttpResponse
+from django.urls import reverse_lazy
 
 
-def home(request):
-    return render(request, 'coffee_home.html')
+class IndexPage(TemplateView):
+    template_name = 'coffee_home.html'
+
+    def your_view(request):
+        if request.GET.get(''):
+            return redirect('/')
 
 
-def menu(request):
-    return render(request, 'coffee_menu.html')
+# def reserve_table(request):
+#     if request.method == 'POST':
+#         name = request.POST['name']
+#         last_name = request.POST['last_name']
+#         date = request.POST['date']
+#         time = request.POST['time']
+#         phone = request.POST['phone']
+#         message = request.POST['message']
+#
+#         reservation = Reservation.objects.create(
+#             name=name,
+#             last_name=last_name,
+#             date=date,
+#             time=time,
+#             phone=phone,
+#             message=message
+#         )
+#     return redirect('/')
 
 
-def services(request):
-    return render(request, 'coffee_services.html')
+class MenuPage(TemplateView):
+    template_name = 'coffee_menu.html'
 
 
-def blog(request):
-    posts = Post.objects.all()
-    paginator = Paginator(posts, 6)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    return render(request, 'coffee_blog.html', {'page_obj': page_obj})
+class ServicesPage(TemplateView):
+    template_name = 'coffee_services.html'
 
 
-def about(request):
-    return render(request, 'coffee_about.html')
+class BlogPage(TemplateView):
+    template_name = 'coffee_blog.html'
+
+    def get_context_data(self, **kwargs):
+        posts = Post.objects.all()
+        paginator = Paginator(posts, 6)
+        page_number = self.request.GET.get('page')
+        page_obj = paginator.get_page(page_number)
+        return {'page_obj': page_obj}
 
 
-def contact(request):
-    return render(request, 'coffee_contact.html')
+class AboutPage(TemplateView):
+    template_name = 'coffee_about.html'
 
 
-def shop(request):
-    return render(request, 'coffee_shop.html')
+class ContactPage(TemplateView):
+    template_name = 'coffee_contact.html'
+
+    def post(self, request, *args, **kwargs):
+        subject = request.POST.get('subject')
+        message = request.POST.get('message')
+        email = request.POST.get('email')
+        if subject and message and email:
+            try:
+                smtplib.SMTP_SSL()
+                send_mail(subject, message, email, ['u.juliana.serg@ukr.net'], False)
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return HttpResponseRedirect(reverse_lazy('coffee:home'))
+        else:
+            return HttpResponse("Make sure all fields are entered and valid.")
+        # username = request.POST.get('username') if request.user.is_authenticated else None
+
+        # return HttpResponseRedirect('')
 
 
-def card(request):
-    return render(request, 'coffee_card.html')
+class ShopPage(TemplateView):
+    template_name = 'coffee_shop.html'
 
 
-def checkout(request):
-    return render(request, 'coffee_checkout.html')
+class CardPage(TemplateView):
+    template_name = 'coffee_card.html'
+
+    # def cart_view(request):
+    #     cart_items_count = Cart.objects.filter(
+    #         user=request.user).count()  # Предполагается, что у вас есть модель Cart и связь с пользователем
+    #     return render(request, 'cart.html', {'cart_items_count': cart_items_count})
 
 
-def blog_single(request):
-    return render(request, 'coffee_blog_single.html')
+class CheckoutPage(TemplateView):
+    template_name = 'coffee_checkout.html'
+
+
+class BlogSinglePage(TemplateView):
+    template_name = 'coffee_blog_single.html'

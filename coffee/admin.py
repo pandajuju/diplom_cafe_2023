@@ -1,8 +1,9 @@
 from django.contrib import admin
-from .models import DishCategory, Dish, Post, Comment
+from .models import DishCategory, Dish, Post, Comment, Reservation
 from django.utils.safestring import mark_safe
 
 # Register your models here.
+admin.site.register(Reservation)
 admin.site.register(DishCategory)
 
 
@@ -20,15 +21,16 @@ class DishAdmin(admin.ModelAdmin):
 
     photo_src_tag.short_description = 'Dish photo'
 
+
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'date_posted')
     search_fields = ['title', 'content']
     list_filter = ('date_posted', 'author')
 
+
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('post', 'author', 'date_posted')
     search_fields = ['content']
     list_filter = ('date_posted', 'author')
-
