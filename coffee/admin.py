@@ -31,6 +31,6 @@ class PostAdmin(admin.ModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ('post', 'author', 'date_posted')
+    list_display = ('post_id', 'author', 'date_posted', 'email', 'parent_id',)
     search_fields = ['content']
     list_filter = ('date_posted', 'author')

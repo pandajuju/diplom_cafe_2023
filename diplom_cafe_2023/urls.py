@@ -19,6 +19,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from coffee import views
 from diplom_cafe_2023 import settings
 from account.views import RegisterUser, LoginUser, logout_user
 

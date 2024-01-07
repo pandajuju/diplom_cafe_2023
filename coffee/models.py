@@ -3,6 +3,7 @@ from django.core.validators import RegexValidator
 from django.utils import timezone
 from django.contrib.auth.models import User
 
+
 class DishCategory(models.Model):
     name = models.CharField(max_length=255, unique=True)
     order = models.PositiveSmallIntegerField()
@@ -60,11 +61,13 @@ class Post(models.Model):
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
     content = models.TextField()
+    email = models.EmailField()
     date_posted = models.DateTimeField(auto_now_add=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.TextField()
+    parent = models.ForeignKey('self', related_name='replies', on_delete=models.CASCADE, null=False)
 
     def __str__(self):
-        return f'Comment by {self.author.username} on {self.post.title}'
+        return f'Comment by {self.author} on {self.post.title}'
 
 
 class Reservation(models.Model):
@@ -85,6 +88,4 @@ class Reservation(models.Model):
         return f'{self.name} - {self.phone}'
 
     class Meta:
-        ordering = ('-created_at', )
-
-
+        ordering = ('-created_at',)

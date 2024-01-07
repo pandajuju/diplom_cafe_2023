@@ -37,9 +37,9 @@
                                     <div><a href="#" class="meta-chat"><span
                                             class="icon-chat"></span>{{ post.comments.count }}</a></div>
                                 </div>
-                                <h3 class="heading mt-2"><a href=/blog/{{ post.id }}">{{ post.title }}</a>
+                                <h3 class="heading mt-2"><a href="/blog/{{ post.id }}">{{ post.title }}</a>
                                 </h3>
-                                <p>{{ post.content | slice:":100" }}...</p>
+                                <p>{{ post.content | truncatewords:15 }}...</p>
                             </div>
                         </div>
                     </div>
