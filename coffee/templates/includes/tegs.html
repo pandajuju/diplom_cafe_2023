@@ -1,0 +1,10 @@
+<div class="sidebar-box ftco-animate fadeInUp ftco-animated">
+    <div class="categories">
+        <h3>Categories</h3>
+        <ul>
+            {% for category in categories %}
+                <li><a href="#">{{ category.name }} <span>({{ category.post_set.count }})</span></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

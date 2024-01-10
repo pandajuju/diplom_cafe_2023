@@ -1,7 +1,9 @@
+from ckeditor.fields import RichTextField
 from django.db import models
 from django.core.validators import RegexValidator
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.utils.html import strip_tags
 
 
 class DishCategory(models.Model):
@@ -40,13 +42,45 @@ class Gallery(models.Model):
     title = models.CharField(max_length=255, blank=True)
 
 
+class PostCategory(models.Model):
+    name = models.CharField(max_length=200, unique=True)
+
+    def __iter__(self):
+        posts = self.posts.all()
+        for post in posts:
+            yield post
+
+    class Meta:
+        verbose_name_plural = 'Post Categories'
+
+    def __str__(self):
+        return f'{self.name}'
+
+
+class Tag(models.Model):
+    tag_name = models.CharField(max_length=50)
+
+    class Meta:
+        ordering = ["tag_name"]
+
+    def __str__(self):
+        return self.tag_name
+
+
 class Post(models.Model):
-    title = models.CharField(max_length=100)
-    content = models.TextField()
+    title = models.CharField(max_length=200)
+    content = RichTextField()
     date_posted = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='post_images', blank=True, null=True)
+    is_visible = models.BooleanField(default=True)
+    tags = models.ManyToManyField(Tag)
+    # image = models.ManyToManyField('PostImage', related_name='posts', blank=True)
 
+    category = models.ForeignKey(PostCategory, on_delete=models.PROTECT, related_name='posts', default=1, null=True)
+
+    def truncated_content(self):
+        content_without_tags = strip_tags(self.content)
+        return content_without_tags[:150]
     def __str__(self):
         return self.title
 
@@ -58,13 +92,21 @@ class Post(models.Model):
         return self.comments.count()
 
 
+class PostImage(models.Model):
+    post_image = models.ImageField(upload_to='post_images')
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Image {self.pk}"
+
+
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
     content = models.TextField()
     email = models.EmailField()
     date_posted = models.DateTimeField(auto_now_add=True)
     author = models.TextField()
-    parent = models.ForeignKey('self', related_name='replies', on_delete=models.CASCADE, null=False)
+    parent = models.ForeignKey('self', related_name='replies', on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return f'Comment by {self.author} on {self.post.title}'

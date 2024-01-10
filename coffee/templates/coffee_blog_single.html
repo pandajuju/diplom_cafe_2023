@@ -28,12 +28,20 @@
             <div class="row">
                 <div class="col-md-8 ftco-animate">
                     <h2 class="mb-3">{{ post.title }}</h2>
-                    <p>{{ post.content }}</p>
-                    {% if post.image %}
-                        <p>
-                            <img src="{{ post.image.url }}" alt="{{ post.image.alt }}" class="img-fluid">
-                        </p>
-                    {% endif %}
+                    <div>{{ post.content|safe }}</div>
+                    {% for img in post.postimage_set.all %}
+                        <div class="mb-3" style="max-width: 400px; max-height: 300px; overflow: hidden;">
+                            <a href="/blog/{{ post.id }}" class="block-20"
+                               style="background-image: url('{{ img.post_image.url }}');"></a>
+                        </div>
+                    {% endfor %}
+{#                    <div class="tag-widget post-tag-container mb-5 mt-5">#}
+{#                        <div class="tagcloud">#}
+{#                            {% for tag in post.tag_set.all %}#}
+{#                                <a href="#" class="tag-cloud-link">#{{ tag.tag_name }}</a>#}
+{#                            {% endfor %}#}
+{#                        </div>#}
+{#                    </div>#}
                     <div class="comment-form-wrap pt-5">
                         <h3 class="mb-5">Leave a comment</h3>
                         <form method="post" role="form">
@@ -52,64 +60,6 @@
                             </div>
                         </form>
                     </div>
-
-
-                    {#                    <div class="pt-5 mt-5">#}
-                    {#                        <h3 class="mb-5">{{ post.comments.count }} Comments</h3>#}
-                    {#                        <ul class="comment-list">#}
-                    {#                            {% for comment in comments %}#}
-                    {#                                <li class="comment">#}
-                    {#                                    <div class="comment-body">#}
-                    {#                                        <h3>{{ comment.author }}</h3>#}
-                    {#                                        <div class="meta">{{ comment.date_posted }}</div>#}
-                    {#                                        <p>{{ comment.content }}</p>#}
-                    {##}
-                    {#                                        <p>#}
-                    {#                                            <a href="#reply_{{ comment.id }}" class="reply">Reply</a>#}
-                    {#                                        </p>#}
-                    {##}
-                    {#                                        <!-- Форма ответа на комментарий -->#}
-                    {#                                        <form id="reply_form_{{ comment.id }}" method="post" role="form"#}
-                    {#                                              class="reply-form" style="display: none;">#}
-                    {#                                            {% csrf_token %}#}
-                    {#                                            <input type="hidden" name="parent_id`" id="parent_id" value="{{ comment.id }}">#}
-                    {#                                            <div class=" form-error">{{ form.non_field_errors }}</div>#}
-                    {#                                            <div class="gy-4">#}
-                    {#                                                {% for f in form %}#}
-                    {#                                                    <p>#}
-                    {#                                                        <label class="form-label"#}
-                    {#                                                               for="{{ f.id_for_label }}">{{ f.label }}:</label>{{ f }}#}
-                    {#                                                    </p>#}
-                    {#                                                    <div class="form-error"#}
-                    {#                                                         style="padding-left: 15px">{{ f.errors }}#}
-                    {#                                                    </div>#}
-                    {#                                                {% endfor %}#}
-                    {#                                            </div>#}
-                    {#                                            <div class="text-center">#}
-                    {#                                                <button type="submit" class="btn btn-primary" id="submit_comments">#}
-                    {#                                                    Submit#}
-                    {#                                                </button>#}
-                    {#                                            </div>#}
-                    {#                                        </form>#}
-                    {#                                        <form id="reply_form_{{ comment.id }}" class="reply-form" method="post"#}
-                    {#                                              style="display: none;">#}
-                    {#                                            {% csrf_token %}#}
-                    {#                                            {{ reply_form.as_p }}#}
-                    {#                                            <input type="hidden" name="parent_comment_id" value="{{ comment.id }}">#}
-                    {#                                            <button type="submit" class="btn btn-primary">Submit</button>#}
-                    {#                                        </form>#}
-                    {##}
-                    {#                                        <!-- Ответы на комментарии -->#}
-                    {#                                        <ul class="replies">#}
-                    {#                                            {% for reply in comment.replies.all %}#}
-                    {#                                                <li>{{ reply.author }}: {{ reply.content }}</li>#}
-                    {#                                            {% endfor %}#}
-                    {#                                        </ul>#}
-                    {#                                    </div>#}
-                    {#                                </li>#}
-                    {#                            {% endfor %}#}
-                    {#                        </ul>#}
-                    {#                    </div>#}
                     <div class="pt-5 mt-5">
                         <h3 class="mb-5">{{ post.comments.count }} Comments</h3>
                         <ul class="comment-list">
@@ -187,10 +137,8 @@
 
                                                 <!-- Рекурсивное вывод дочерних ответов -->
                                                 <ul class="replies">
-                                                    <!-- Можно использовать аналогичный подход для еще более вложенных ответов -->
                                                     {% for reply in reply.replies.all %}
                                                         <li class="comment ml-5">
-                                                            <!-- Информация о дочернем комментарии (ответе) -->
                                                             <h3>{{ reply.author }}</h3>
                                                             <div class="meta">{{ reply.date_posted }}</div>
                                                             <p>{{ reply.content }}</p>
@@ -203,6 +151,48 @@
                                 </li>
                             {% endfor %}
                         </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 sidebar-box ftco-animate">
+                    <div class="categories">
+                        <h3>Categories</h3>
+                        <ul class="list-unstyled ml-0 pl-0">
+                            {% for category in categories_with_counts %}
+                                <li><a href="#">{{ category.name }}<span>({{ category.num_posts }})</span></a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="resent-blog mt-5">
+                        <h3>Recent Blog</h3>
+                        {% for post in recent_posts %}
+                            <div class="block-21 mb-4 d-flex">
+                                {% with img=post.postimage_set.first %}
+                                    <a href="/blog/{{ post.id }}" class="blog-img mr-4"
+                                       style="background-image: url('{{ img.post_image.url }}');"></a>
+                                {% endwith %}
+                                <div class="text">
+                                    <h3 class="heading"><a
+                                            href="{% url 'coffee:blog_single' post.id %}">{{ post.title }}</a></h3>
+                                    <div class="meta">
+                                        <div><a href="#"><span
+                                                class="icon-calendar"></span> {{ post.date_posted|date:"F d, Y" }}</a>
+                                        </div>
+                                        <div><a href="#"><span class="icon-person"></span> {{ post.author }}</a></div>
+                                        <div><a href="#"><span class="icon-chat"></span> {{ post.comments.count }}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="sidebar-box ftco-animate">
+                        <h3>Tags</h3>
+                        <div class="tagcloud">
+                            {% for tag in tags %}
+                                <a href="#" class="tag-cloud-link">{{ tag.tag_name }}</a>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>

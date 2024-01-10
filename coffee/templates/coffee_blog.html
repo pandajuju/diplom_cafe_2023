@@ -27,9 +27,12 @@
                 {% for post in page_obj %}
                     <div class="col-md-4 d-flex ftco-animate">
                         <div class="blog-entry align-self-stretch">
-                            <a href="/blog/{{ post.id }}" class="block-20"
-                               style="background-image: url('{{ post.image.url }}');"></a>
-                            </a>
+                            {% if post.postimage_set.all %}
+                                {% with img=post.postimage_set.first %}
+                                    <a href="/blog/{{ post.id }}" class="block-20"
+                                       style="background-image: url('{{ img.post_image.url }}');"></a>
+                                {% endwith %}
+                            {% endif %}
                             <div class="text py-4 d-block">
                                 <div class="meta">
                                     <div><a href="#">{{ post.date_posted }}</a></div>
@@ -37,9 +40,8 @@
                                     <div><a href="#" class="meta-chat"><span
                                             class="icon-chat"></span>{{ post.comments.count }}</a></div>
                                 </div>
-                                <h3 class="heading mt-2"><a href="/blog/{{ post.id }}">{{ post.title }}</a>
-                                </h3>
-                                <p>{{ post.content | truncatewords:15 }}...</p>
+                                <h3 class="heading mt-2"><a href="/blog/{{ post.id }}">{{ post.title }}</a></h3>
+                                <p>{{ post.truncated_content }}...</p>
                             </div>
                         </div>
                     </div>

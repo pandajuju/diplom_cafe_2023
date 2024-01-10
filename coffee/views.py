@@ -1,13 +1,14 @@
 import smtplib
 
 from django.contrib import messages
+from django.db.models import Count
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.paginator import Paginator
 from django.views.generic import TemplateView
 
 from account.forms import AuthenticatedMessageForm, AnonymousMessageForm
 # from .forms import Reservation
-from .models import Post, DishCategory, Dish, Comment
+from .models import Post, DishCategory, Dish, Comment, PostCategory, Tag
 from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponseRedirect, HttpResponse, Http404, HttpResponseBadRequest
 from django.urls import reverse_lazy
@@ -133,8 +134,15 @@ class BlogSinglePage(MessageFormMixin, TemplateView):
             post_id = kwargs.get('id')
             post = Post.objects.get(id=post_id)
             comments = post.comments.filter(parent=None).order_by('date_posted')
+            categories_with_counts = PostCategory.objects.annotate(num_posts=Count('posts'))
+            recent_posts = Post.objects.order_by('-date_posted')[:3]
+            tags = post.tags.all()
+            print(tags)
+            context['recent_posts'] = recent_posts
             context['post'] = post
             context['comments'] = comments
+            context['categories_with_counts'] = categories_with_counts
+            context['tags'] = tags
         except Post.DoesNotExist:
             raise Http404("Post does not exist.")
 

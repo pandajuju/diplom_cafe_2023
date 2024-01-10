@@ -37,11 +37,25 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'ckeditor',
+
     "coffee.apps.CoffeeConfig",
     "main_app.apps.MainAppConfig",
     "manager.apps.ManagerConfig",
     "account.apps.AccountConfig"
 ]
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 150,
+        'width': 800,
+        'removePlugins': 'stylesheetparser',
+    },
+}
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_IMAGE_BACKEND = 'pillow'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -1,10 +1,13 @@
 from django.contrib import admin
-from .models import DishCategory, Dish, Post, Comment, Reservation
+from .models import DishCategory, Dish, Post, Comment, PostCategory, Tag, PostImage
 from django.utils.safestring import mark_safe
 
-# Register your models here.
-admin.site.register(Reservation)
+
+# admin.site.register(Reservation)
 admin.site.register(DishCategory)
+admin.site.register(PostCategory)
+# admin.site.register(Tag)
+admin.site.register(PostImage)
 
 
 @admin.register(Dish)
@@ -22,11 +25,48 @@ class DishAdmin(admin.ModelAdmin):
     photo_src_tag.short_description = 'Dish photo'
 
 
+# `@admin.register(PostImage)
+# class PostImageAdmin(admin.ModelAdmin):
+#     list_display = ('image_preview', 'post')
+#     list_filter = ('post',)
+#
+#     def image_preview(self, obj):
+#         return obj.image.url if obj.image else 'No image found'
+#     image_preview.short_description = 'Image Preview'`
+
+# class PostImageInline(admin.TabularInline):
+#     model = PostImage
+#     extra = 1
+#
+#
+# class TagInline(admin.TabularInline):
+#     model = Post.tags.through
+#     extra = 1
+
+
+@admin.register(Tag)
+class TagAdmin(admin.ModelAdmin):
+    model = Tag
+
+
+class PostImageInline(admin.TabularInline):
+    model = PostImage
+
+
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'author', 'date_posted')
+    list_display = ('title', 'author', 'date_posted', 'category', 'get_tags', 'get_images')
     search_fields = ['title', 'content']
     list_filter = ('date_posted', 'author')
+
+    def get_tags(self, obj):
+        return ", ".join([tag.tag_name for tag in obj.tags.all()])
+
+    def get_images(self, obj):
+        return ", ".join([str(image) for image in obj.postimage_set.all()])
+
+    get_tags.short_description = 'Tags'
+    get_images.short_description = 'Images'
 
 
 @admin.register(Comment)
