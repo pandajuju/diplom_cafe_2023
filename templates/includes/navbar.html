@@ -46,7 +46,40 @@
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav ml-auto">
+            {#            <ul class="navbar-nav ml-auto">#}
+            {#                <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>#}
+            {#                {% for item in main_menu %}#}
+            {#                    <li class="nav-item {% if item.is_anchor %}active{% endif %}">#}
+            {#                        <a href="{% if item.is_anchor %}{% url 'coffee:home' %}{{ item.slug }}{% else %}{{ item.get_absolute_url }}{% endif %}"#}
+            {#                           class="nav-link">#}
+            {#                            {{ item.slug }}#}
+            {#                        </a>#}
+            {#                    </li>#}
+            {#                {% endfor %}#}
+            {#                <li class="nav-item cart"><a href="/cart/" class="nav-link d-flex align-items-center">#}
+            {#                    <span class="icon icon-shopping_cart mr-2"></span>#}
+            {#                    <div>#}
+            {#                        <small class="font-weight-bold" style="color: burlywood">{{ cart_items_count }}</small>#}
+            {#                    </div>#}
+            {#                </a>#}
+            {#                </li>#}
+            {#                <li class="nav-item cart">#}
+            {#                    {% if user.is_authenticated %}#}
+            {#                        <div class="d-flex align-items-center">#}
+            {#                            <span class="icon icon-account_circle"></span>#}
+            {#                            <span>{{ user.username }}</span>#}
+            {#                            <a href="{% url 'logout' %}" class="nav-link ml-2">Logout</a>#}
+            {#                        </div>#}
+            {#                    {% else %}#}
+            {#                        <a href="/login/" class="nav-link">#}
+            {#                            <span class="icon icon-account_circle"></span>#}
+            {#                        </a>#}
+            {#                    {% endif %}#}
+            {#                </li>#}
+            {##}
+            {##}
+            {#            </ul>#}
+            <ul class="navbar-nav ml-auto d-flex align-items-center">
                 <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
                 {% for item in main_menu %}
                     <li class="nav-item {% if item.is_anchor %}active{% endif %}">
@@ -57,15 +90,29 @@
                         </a>
                     </li>
                 {% endfor %}
-                <li class="nav-item cart"><a href="/login/" class="nav-link"><span
-                        class="icon icon-account_circle"></span></a>
+                <li class="nav-item cart">
+                    <a href="/cart/" class="nav-link d-flex align-items-center">
+                        <span class="icon icon-shopping_cart mr-2"></span>
+                        <div>
+                            <small class="font-weight-bold" style="color: burlywood">{{ cart_items_count }}</small>
+                        </div>
+                    </a>
                 </li>
-                <li class="nav-item cart"><a href="/card/" class="nav-link"><span
-                        class="icon icon-shopping_cart"></span><span
-                        class="bag d-flex justify-content-center align-items-center"><small>{{ cart_items_count }}</small></span></a>
+                <li class="nav-item cart ml-2">
+                    {% if user.is_authenticated %}
+                        <div class="d-flex align-items-center">
+                            <span class="icon icon-account_circle mr-2" ></span>
+                            <span class="mr-2" style="color: #c49b63;">{{ user.username }}</span>
+                            <a href="{% url 'logout' %}" class="nav-link" style="color: #c49b63;" >Logout</a>
+                        </div>
+                    {% else %}
+                        <a href="/login/" class="nav-link">
+                            <span class="icon icon-account_circle"></span>
+                        </a>
+                    {% endif %}
                 </li>
-
             </ul>
+
         </div>
     </div>
 </nav>

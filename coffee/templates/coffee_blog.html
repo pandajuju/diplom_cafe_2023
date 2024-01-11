@@ -33,15 +33,15 @@
                                        style="background-image: url('{{ img.post_image.url }}');"></a>
                                 {% endwith %}
                             {% endif %}
-                            <div class="text py-4 d-block">
+                            <div class="text py-4 d-flex flex-column">
                                 <div class="meta">
                                     <div><a href="#">{{ post.date_posted }}</a></div>
                                     <div><a href="#">{{ post.author }}</a></div>
                                     <div><a href="#" class="meta-chat"><span
                                             class="icon-chat"></span>{{ post.comments.count }}</a></div>
                                 </div>
-                                <h3 class="heading mt-2"><a href="/blog/{{ post.id }}">{{ post.title }}</a></h3>
-                                <p>{{ post.truncated_content }}...</p>
+                                <h3 class="heading mt-2 text-truncate"><a href="/blog/{{ post.id }}">{{ post.title }}</a></h3>
+                                <p class="flex-grow-1">{{ post.truncated_content }}...</p>
                             </div>
                         </div>
                     </div>

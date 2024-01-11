@@ -97,18 +97,63 @@ class ShopPage(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        dishes = Dish.objects.all()
-        context['dishes'] = dishes
+        categories = DishCategory.objects.filter(is_visible=True).prefetch_related('dishes')
+        context['categories'] = categories
         return context
 
 
-class CardPage(TemplateView):
-    template_name = 'coffee_card.html'
+class CartPage(TemplateView):
+    def get(self, request):
+        cart = request.session.get('cart', {})
+        products_in_cart = []
+        total_amount = 0
+        cart_items_count = 0
 
-    # def cart_view(request):
-    #     cart_items_count = Cart.objects.filter(
-    #         user=request.user).count()  # Предполагается, что у вас есть модель Cart и связь с пользователем
-    #     return render(request, 'cart.html', {'cart_items_count': cart_items_count})
+        for product_id, quantity in cart.items():
+            product = Dish.objects.get(id=product_id)
+            total_for_product = product.price * quantity
+            total_amount += total_for_product
+            cart_items_count += quantity
+            products_in_cart.append({'product': product, 'quantity': quantity, 'total_for_product': total_for_product})
+
+        return render(request, 'coffee_card.html', {'products_in_cart': products_in_cart, 'total_amount': total_amount})
+
+
+class AddToCartView(TemplateView):
+    def post(self, request, *args, **kwargs):
+        product_id = request.POST.get('product_id')
+        quantity = int(request.POST.get('quantity', 1))
+
+        cart = request.session.get('cart', {})
+        cart[product_id] = cart.get(product_id, 0) + quantity
+        request.session['cart'] = cart
+
+        return redirect('coffee:shop')
+
+
+class RemoveFromCartView(TemplateView):
+    def post(self, request, *args, **kwargs):
+        product_id = request.POST.get('product_id')
+
+        cart = request.session.get('cart', {})
+        if product_id in cart:
+            del cart[product_id]
+            request.session['cart'] = cart
+
+        return redirect('coffee:cart')
+
+
+class UpdateCartView(TemplateView):
+    def post(self, request, *args, **kwargs):
+        product_id = request.POST.get('product_id')
+        quantity = int(request.POST.get('quantity', 1))
+
+        cart = request.session.get('cart', {})
+        if product_id in cart and quantity > 0:
+            cart[product_id] = quantity
+            request.session['cart'] = cart
+
+        return redirect('coffee:cart')
 
 
 class CheckoutPage(TemplateView):
@@ -175,3 +220,11 @@ class BlogSinglePage(MessageFormMixin, TemplateView):
             context = self.get_context_data(**kwargs)
             context['form'] = comment_form
             return context
+
+
+class Shop(TemplateView):
+    def get(self, request, dish_id):
+        cart = request.session.get('cart', {})
+        request.session['cart'] = cart
+
+        return redirect('coffee_card.html')
