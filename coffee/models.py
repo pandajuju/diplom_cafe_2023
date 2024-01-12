@@ -81,6 +81,7 @@ class Post(models.Model):
     def truncated_content(self):
         content_without_tags = strip_tags(self.content)
         return content_without_tags[:150]
+
     def __str__(self):
         return self.title
 

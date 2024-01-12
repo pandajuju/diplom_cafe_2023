@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import DishCategory, Dish, Post, Comment, PostCategory, Tag, PostImage
+from .models import DishCategory, Dish, Post, Comment, PostCategory, Tag, PostImage, Reservation
 from django.utils.safestring import mark_safe
 
 
-# admin.site.register(Reservation)
+admin.site.register(Reservation)
 admin.site.register(DishCategory)
 admin.site.register(PostCategory)
 # admin.site.register(Tag)
@@ -23,25 +23,6 @@ class DishAdmin(admin.ModelAdmin):
             return mark_safe(f"<img src='{obj.photo.url}' width=50>")
 
     photo_src_tag.short_description = 'Dish photo'
-
-
-# `@admin.register(PostImage)
-# class PostImageAdmin(admin.ModelAdmin):
-#     list_display = ('image_preview', 'post')
-#     list_filter = ('post',)
-#
-#     def image_preview(self, obj):
-#         return obj.image.url if obj.image else 'No image found'
-#     image_preview.short_description = 'Image Preview'`
-
-# class PostImageInline(admin.TabularInline):
-#     model = PostImage
-#     extra = 1
-#
-#
-# class TagInline(admin.TabularInline):
-#     model = Post.tags.through
-#     extra = 1
 
 
 @admin.register(Tag)

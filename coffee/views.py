@@ -7,8 +7,9 @@ from django.core.paginator import Paginator
 from django.views.generic import TemplateView
 
 from account.forms import AuthenticatedMessageForm, AnonymousMessageForm
+from .forms import ReservationForm
 # from .forms import Reservation
-from .models import Post, DishCategory, Dish, Comment, PostCategory, Tag
+from .models import Post, DishCategory, Dish, Comment, PostCategory, Tag, Reservation
 from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponseRedirect, HttpResponse, Http404, HttpResponseBadRequest
 from django.urls import reverse_lazy
@@ -228,3 +229,31 @@ class Shop(TemplateView):
         request.session['cart'] = cart
 
         return redirect('coffee_card.html')
+
+
+class BookTableMultiPageView(TemplateView):
+    template_name = 'coffee_home.html'
+    form_class = ReservationForm
+
+    def get(self, request):
+        form = self.form_class(initial=request.session.get('form_data', None))
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request):
+        form = self.form_class(request.POST)
+
+        if form.is_valid():
+            request.session['form_data'] = form.cleaned_data
+
+            reservation = Reservation(
+                name=form.cleaned_data['name'],
+                last_name=form.cleaned_data['last_name'],
+                date=form.cleaned_data['date'],
+                time=form.cleaned_data['time'],
+                phone=form.cleaned_data['phone'],
+                message=form.cleaned_data['message'],
+                is_processed=False)
+            reservation.save()
+
+            return redirect('menu')
+        return render(request, self.template_name, {'form': form})

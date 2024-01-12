@@ -91,21 +91,10 @@ class AuthenticatedMessageForm(forms.ModelForm):
                               min_length=4,
                               required=True)
 
-    # parent_id = forms.HiddenInput(attrs={"id": 'parent_id'})
-
     class Meta:
         model = Comment
         fields = ('content',)
 
-    # def clean(self):
-    #     super(AuthenticatedMessageForm, self).clean()
-    #
-    #     content = self.cleaned_data.get('content')
-    #
-    #     if len(content) < 4:
-    #         self._errors['content'] = self.error_class(['Content must be at least 4'])
-    #
-    #     return self.cleaned_data
 
 
 
