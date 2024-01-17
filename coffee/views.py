@@ -4,76 +4,157 @@ from django.contrib import messages
 from django.db.models import Count
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.paginator import Paginator
-from django.views.generic import TemplateView
+from django.utils.decorators import method_decorator
+from django.views import View
+from django.views.decorators.csrf import csrf_exempt
+from django.views.generic import TemplateView, ListView
 
 from account.forms import AuthenticatedMessageForm, AnonymousMessageForm
-from .forms import ReservationForm
-# from .forms import Reservation
+from .forms import ReservationForm, BillingDetailsForm
 from .models import Post, DishCategory, Dish, Comment, PostCategory, Tag, Reservation
 from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponseRedirect, HttpResponse, Http404, HttpResponseBadRequest
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 
 
 class IndexPage(TemplateView):
     template_name = 'coffee_home.html'
+    form_class = ReservationForm
 
-    def your_view(request):
-        if request.GET.get(''):
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        excluded_category_name = 'Coffee'
+        categories = DishCategory.objects.exclude(name=excluded_category_name)[:3]
+
+        category_name = 'Coffee'
+        dishes_coffee = Dish.objects.filter(category__name=category_name, is_visible=True)[:4]
+        recent_posts = Post.objects.order_by('-date_posted')[:4]
+        cart = self.request.session.get('cart', {})
+        cart_items_count = sum(cart.values())
+
+        context['recent_posts'] = recent_posts
+        context['categories'] = categories
+        context['dishes_coffee'] = dishes_coffee
+        context['cart_items_count'] = cart_items_count
+        return context
+
+    @method_decorator(csrf_exempt)
+    def dispatch(self, *args, **kwargs):
+        return super().dispatch(*args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            form.save()
             return redirect('/')
-
-
-# def reserve_table(request):
-#     if request.method == 'POST':
-#         name = request.POST['name']
-#         last_name = request.POST['last_name']
-#         date = request.POST['date']
-#         time = request.POST['time']
-#         phone = request.POST['phone']
-#         message = request.POST['message']
-#
-#         reservation = Reservation.objects.create(
-#             name=name,
-#             last_name=last_name,
-#             date=date,
-#             time=time,
-#             phone=phone,
-#             message=message
-#         )
-#     return redirect('/')
+        else:
+            print(form.errors)
+            return self.render_to_response(self.get_context_data(form=form))
 
 
 class MenuPage(TemplateView):
     template_name = 'coffee_menu.html'
+    form_class = ReservationForm
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         categories = DishCategory.objects.all()
+        recent_posts = Post.objects.order_by('-date_posted')[:2]
+        cart = self.request.session.get('cart', {})
+        cart_items_count = sum(cart.values())
+
         context['categories'] = categories
+        context['recent_posts'] = recent_posts
+        context['cart_items_count'] = cart_items_count
         return context
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+        else:
+            print(form.errors)
+            return self.render_to_response(self.get_context_data(form=form))
 
 
 class ServicesPage(TemplateView):
     template_name = 'coffee_services.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        recent_posts = Post.objects.order_by('-date_posted')[:4]
+        cart = self.request.session.get('cart', {})
+        cart_items_count = sum(cart.values())
+
+        context['cart_items_count'] = cart_items_count
+        context['recent_posts'] = recent_posts
+        return context
 
 
 class BlogPage(TemplateView):
     template_name = 'coffee_blog.html'
 
     def get_context_data(self, **kwargs):
-        posts = Post.objects.all()
+        context = super().get_context_data(**kwargs)
+        posts = Post.objects.all().order_by('-date_posted')
+        recent_posts = Post.objects.order_by('-date_posted')[:4]
+        cart = self.request.session.get('cart', {})
+        cart_items_count = sum(cart.values())
+
+        category_id = self.request.GET.get('category')
+        tag_id = self.request.GET.get('tag')
+
+        if category_id:
+            category = get_object_or_404(PostCategory, id=category_id)
+            posts = posts.filter(category=category)
+
+        if tag_id:
+            tag = get_object_or_404(Tag, id=tag_id)
+            posts = posts.filter(tags=tag)
+
         paginator = Paginator(posts, 6)
         page_number = self.request.GET.get('page')
         page_obj = paginator.get_page(page_number)
-        return {'page_obj': page_obj}
+
+        context['recent_posts'] = recent_posts
+        context['page_obj'] = page_obj
+        context['cart_items_count'] = cart_items_count
+
+        return context
 
 
 class AboutPage(TemplateView):
     template_name = 'coffee_about.html'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        category_name = 'Coffee'
+        recent_posts = Post.objects.order_by('-date_posted')[:2]
+        dishes_coffee = Dish.objects.filter(category__name=category_name, is_visible=True)[:4]
+        cart = self.request.session.get('cart', {})
+        cart_items_count = sum(cart.values())
+
+        context['recent_posts'] = recent_posts
+        context['dishes_coffee'] = dishes_coffee
+        context['cart_items_count'] = cart_items_count
+        return context
+
 
 class ContactPage(TemplateView):
     template_name = 'coffee_contact.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        cart = self.request.session.get('cart', {})
+        recent_posts = Post.objects.order_by('-date_posted')[:2]
+        cart_items_count = sum(cart.values())
+
+        context['cart_items_count'] = cart_items_count
+        context['recent_posts'] = recent_posts
+        return context
 
     def post(self, request, *args, **kwargs):
         subject = request.POST.get('subject')
@@ -99,13 +180,22 @@ class ShopPage(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         categories = DishCategory.objects.filter(is_visible=True).prefetch_related('dishes')
+        recent_posts = Post.objects.order_by('-date_posted')[:2]
+        cart = self.request.session.get('cart', {})
+        cart_items_count = sum(cart.values())
+
+        context['recent_posts'] = recent_posts
         context['categories'] = categories
+        context['cart_items_count'] = cart_items_count
         return context
 
 
-class CartPage(TemplateView):
+class CartPage(View):
+    template_name = 'coffee_card.html'
+
     def get(self, request):
         cart = request.session.get('cart', {})
+        recent_posts = Post.objects.order_by('-date_posted')[:2]
         products_in_cart = []
         total_amount = 0
         cart_items_count = 0
@@ -117,7 +207,17 @@ class CartPage(TemplateView):
             cart_items_count += quantity
             products_in_cart.append({'product': product, 'quantity': quantity, 'total_for_product': total_for_product})
 
-        return render(request, 'coffee_card.html', {'products_in_cart': products_in_cart, 'total_amount': total_amount})
+        # form = BillingDetailsForm(initial={'total_amount': total_amount}),
+
+        context = {
+            'recent_posts' : recent_posts,
+            'products_in_cart': products_in_cart,
+            'total_amount': total_amount,
+            'cart_items_count': cart_items_count,
+            # 'form': form,
+        }
+
+        return render(request, self.template_name, context)
 
 
 class AddToCartView(TemplateView):
@@ -160,6 +260,32 @@ class UpdateCartView(TemplateView):
 class CheckoutPage(TemplateView):
     template_name = 'coffee_checkout.html'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        recent_posts = Post.objects.order_by('-date_posted')[:3]
+        categories_with_counts = PostCategory.objects.annotate(num_posts=Count('posts'))
+        cart = self.request.session.get('cart', {})
+        cart_items_count = sum(cart.values())
+
+        context['tags'] = Tag.objects.all()
+        context['recent_posts'] = recent_posts
+        context['categories_with_counts'] = categories_with_counts
+        context['cart_items_count'] = cart_items_count
+        return context
+
+    def post(self, request):
+        form = BillingDetailsForm(request.POST)
+        if form.is_valid():
+            order = form.save(commit=False)
+            order.total_amount = form.cleaned_data['total_amount']
+            order.save()
+
+            request.session['cart'] = {}
+
+            return render(request, 'order_confirmation.html', {'order': order})
+
+    # return render(request, self.template_name, {'form': form})
+
 
 class MessageFormMixin:
 
@@ -181,23 +307,27 @@ class BlogSinglePage(MessageFormMixin, TemplateView):
             post = Post.objects.get(id=post_id)
             comments = post.comments.filter(parent=None).order_by('date_posted')
             categories_with_counts = PostCategory.objects.annotate(num_posts=Count('posts'))
-            recent_posts = Post.objects.order_by('-date_posted')[:3]
+            recent_posts = Post.objects.order_by('-date_posted')[:5]
             tags = post.tags.all()
-            print(tags)
+            cart = self.request.session.get('cart', {})
+            cart_items_count = sum(cart.values())
+
             context['recent_posts'] = recent_posts
             context['post'] = post
             context['comments'] = comments
             context['categories_with_counts'] = categories_with_counts
             context['tags'] = tags
+            context['cart_items_count'] = cart_items_count
+
         except Post.DoesNotExist:
             raise Http404("Post does not exist.")
 
         form = self.get_message_form(self.request)
         context['form'] = form()
+
         return context
 
     def post(self, request, *args, **kwargs):
-
         form_class = self.get_message_form(self.request)
         parent_id = self.request.POST.get('parent_id')
         comment_form = form_class(self.request.POST)
@@ -216,44 +346,14 @@ class BlogSinglePage(MessageFormMixin, TemplateView):
                 comment.parent = parent_comment
 
             comment.save()
-            return redirect('coffee:blog_single', id=kwargs.get('id'))
+
+            category_id = self.request.POST.get('category')
+            tag_id = self.request.POST.get('tag')
+            url = reverse('coffee:blog') + f'?category={category_id}&tag={tag_id}&id={kwargs.get("id")}'
+            return redirect(url)
         else:
             context = self.get_context_data(**kwargs)
             context['form'] = comment_form
-            return context
+            return self.render_to_response(context)
 
 
-class Shop(TemplateView):
-    def get(self, request, dish_id):
-        cart = request.session.get('cart', {})
-        request.session['cart'] = cart
-
-        return redirect('coffee_card.html')
-
-
-class BookTableMultiPageView(TemplateView):
-    template_name = 'coffee_home.html'
-    form_class = ReservationForm
-
-    def get(self, request):
-        form = self.form_class(initial=request.session.get('form_data', None))
-        return render(request, self.template_name, {'form': form})
-
-    def post(self, request):
-        form = self.form_class(request.POST)
-
-        if form.is_valid():
-            request.session['form_data'] = form.cleaned_data
-
-            reservation = Reservation(
-                name=form.cleaned_data['name'],
-                last_name=form.cleaned_data['last_name'],
-                date=form.cleaned_data['date'],
-                time=form.cleaned_data['time'],
-                phone=form.cleaned_data['phone'],
-                message=form.cleaned_data['message'],
-                is_processed=False)
-            reservation.save()
-
-            return redirect('menu')
-        return render(request, self.template_name, {'form': form})

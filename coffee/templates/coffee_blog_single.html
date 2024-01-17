@@ -35,13 +35,6 @@
                                style="background-image: url('{{ img.post_image.url }}');"></a>
                         </div>
                     {% endfor %}
-{#                    <div class="tag-widget post-tag-container mb-5 mt-5">#}
-{#                        <div class="tagcloud">#}
-{#                            {% for tag in post.tag_set.all %}#}
-{#                                <a href="#" class="tag-cloud-link">#{{ tag.tag_name }}</a>#}
-{#                            {% endfor %}#}
-{#                        </div>#}
-{#                    </div>#}
                     <div class="comment-form-wrap pt-5">
                         <h3 class="mb-5">Leave a comment</h3>
                         <form method="post" role="form">
@@ -49,8 +42,8 @@
                             <div class="form-error">{{ form.non_field_errors }}</div>
                             <div class="gy-4">
                                 {% for f in form %}
-                                    <p><label class="form-label"
-                                              for="{{ f.id_for_label }}">{{ f.label }}:</label>{{ f }}
+                                    <p>
+                                        <label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}:</label>{{ f }}
                                     </p>
                                     <div class="form-error" style="padding-left: 15px">{{ f.errors }}</div>
                                 {% endfor %}
@@ -65,12 +58,9 @@
                         <ul class="comment-list">
                             {% for comment in comments %}
                                 <li class="comment ml-5">
-                                    <!-- Информация о комментарии -->
                                     <h3>{{ comment.author }}</h3>
                                     <div class="meta">{{ comment.date_posted }}</div>
                                     <p>{{ comment.content }}</p>
-
-                                    <!-- Форма ответа на комментарий -->
                                     <p>
                                         <a href="#reply_{{ comment.id }}" class="reply">Reply</a>
                                     </p>
@@ -83,11 +73,10 @@
                                         <div class="gy-4">
                                             {% for f in form %}
                                                 <p>
-                                                    <label class="form-label"
-                                                           for="{{ f.id_for_label }}">{{ f.label }}:</label>{{ f }}
+                                                    <label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}:</label>{{ f }}
                                                 </p>
-                                                <div class="form-error"
-                                                     style="padding-left: 15px">{{ f.errors }}
+                                                <div class="form-error"style="padding-left: 15px">
+                                                    {{ f.errors }}
                                                 </div>
                                             {% endfor %}
                                         </div>
@@ -98,16 +87,12 @@
                                         </div>
                                     </form>
 
-                                    <!-- Ответы на комментарии -->
                                     <ul class="replies">
                                         {% for reply in comment.replies.all %}
                                             <li class="comment ml-5">
-                                                <!-- Информация о дочернем комментарии (ответе) -->
                                                 <h3>{{ reply.author }}</h3>
                                                 <div class="meta">{{ reply.date_posted }}</div>
                                                 <p>{{ reply.content }}</p>
-
-                                                <!-- Форма ответа на ответ -->
                                                 <p><a href="#reply_{{ reply.id }}" class="reply">Reply</a></p>
 
                                                 <form id="reply_form_{{ reply.id }}" method="post" role="form"
@@ -134,8 +119,6 @@
                                                         </button>
                                                     </div>
                                                 </form>
-
-                                                <!-- Рекурсивное вывод дочерних ответов -->
                                                 <ul class="replies">
                                                     {% for reply in reply.replies.all %}
                                                         <li class="comment ml-5">
@@ -158,7 +141,7 @@
                         <h3>Categories</h3>
                         <ul class="list-unstyled ml-0 pl-0">
                             {% for category in categories_with_counts %}
-                                <li><a href="#">{{ category.name }}<span>({{ category.num_posts }})</span></a>
+                                <li><a href="{% url 'coffee:blog' %}?category={{ category.id }}">{{ category.name }}<span>({{ category.num_posts }})</span></a>
                                 </li>
                             {% endfor %}
                         </ul>
@@ -190,7 +173,7 @@
                         <h3>Tags</h3>
                         <div class="tagcloud">
                             {% for tag in tags %}
-                                <a href="#" class="tag-cloud-link">{{ tag.tag_name }}</a>
+                                <a href="{% url 'coffee:blog' %}?tag={{ tag.id }}">{{ tag.tag_name }}</a>
                             {% endfor %}
                         </div>
                     </div>
@@ -198,5 +181,4 @@
             </div>
         </div>
     </section>
-
 {% endblock %}

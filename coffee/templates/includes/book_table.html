@@ -1,39 +1,40 @@
-{% block content %}
-    <div class="book p-4">
-        <h3>Book a Table</h3>
-        <form method="post" action="{% url 'coffee:home' %}" class="appointment-form">
-            {% csrf_token %}
-
-            <div class="d-md-flex">
-                <div class="col-lg-4 col-md-6">
-                    {{ form.name }}
-                    <div class="validate">{{ form.errors.name }}</div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    {{ form.last_name }}
-                    <div class="validate">{{ form.errors.last_name }}</div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    {{ form.date }}
-                    <div class="validate">{{ form.errors.date }}</div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    {{ form.time }}
-                    <div class="validate">{{ form.errors.time }}</div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    {{ form.phone }}
-                    <div class="validate">{{ form.errors.phone }}</div>
-                </div>
-            </div>
-            <div class="form-group">
-                {{ form.message }}
-                <div class="validate">{{ form.errors.message }}</div>
-            </div>
-
-            <div class="form-group ml-md-4">
-                <input type="submit" value="Appointment" class="btn btn-white py-3 px-4">
-            </div>
-        </form>
+<form action="" method="post" role="form" class="appointment-form"
+      data-aos="fade-up" data-aos-delay="100">
+    {% csrf_token %}
+    <div class="d-md-flex">
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="name">
+        </div>
+        <div class="form-group ml-md-4">
+            <input type="text" class="form-control" name="last_name" placeholder="last_name">
+        </div>
     </div>
-{% endblock %}
+    <div class="d-md-flex">
+        <div class="form-group">
+            <div class="input-wrap">
+                <div class="icon"><span class="ion-md-calendar"></span></div>
+                <input type="text" class="form-control appointment_date" name="date" placeholder="date">
+            </div>
+        </div>
+        <div class="form-group ml-md-4">
+            <div class="input-wrap">
+                <div class="icon"><span class="ion-ios-clock"></span></div>
+                <input type="text" class="form-control appointment_time" name="time" placeholder="time">
+            </div>
+        </div>
+        <div class="form-group ml-md-4">
+            <input type="text" class="form-control" name="phone" placeholder="phone">
+        </div>
+    </div>
+    <div class="d-md-flex">
+        <div class="form-group"><textarea name="" id="" cols="30" rows="2" class="form-control" name="message"
+                                          placeholder="message"></textarea>
+        </div>
+        <div class="form-group ml-md-4">
+            <input type="submit" value="Appointment"
+                   class="btn {% if page_id == 1 %}btn-primary{% else %}btn-white{% endif %} py-3 px-4"
+                   id="submitBtn_{{ page_id }}">
+        </div>
+    </div>
+</form>
+

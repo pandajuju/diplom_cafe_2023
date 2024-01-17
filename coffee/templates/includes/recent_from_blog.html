@@ -4,62 +4,35 @@
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
                 <h2 class="mb-4">Recent from blog</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts.</p>
+                <p>Stay updated with our latest insights and discoveries. Explore what's trending, get inspired, and be
+                    part of the conversation. Fresh perspectives await you in our Recent from Blog section. Dive in and
+                    join the dialogue!</p>
             </div>
         </div>
-        <div class="row d-flex">
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20"
-                       style="background-image: url('{% static "assets/images/image_1.jpg" %}');">
-                    </a>
-                    <div class="text py-4 d-block">
-                        <div class="meta">
-                            <div><a href="#">Sept 10, 2018</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+        <div class="row">
+            {% for post in recent_posts %}
+                <div class="col-md-3 ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        {% if post.postimage_set.all %}
+                            {% with img=post.postimage_set.first %}
+                                <a href="/blog/{{ post.id }}" class="block-20"
+                                   style="background-image: url('{{ img.post_image.url }}');"></a>
+                            {% endwith %}
+                        {% endif %}
+                        <div class="text py-4">
+                            <div class="meta d-flex justify-content-between">
+                                <div><a href="#">{{ post.date_posted }}</a></div>
+                                <div><a href="#">{{ post.author }}</a></div>
+                                <div><a href="/blog/{{ post.id }}" class="meta-chat"><span
+                                        class="icon-chat"></span>{{ post.comments.count }}</a></div>
+                            </div>
+                            <h3 class="heading mt-2 text-truncate"><a href="/blog/{{ post.id }}">{{ post.title|safe }}</a>
+                            </h3>
+                            <p>{{ post.truncated_content|safe }}...</p>
                         </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary
-                            regelialia.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20"
-                       style="background-image: url('{% static "assets/images/image_2.jpg" %}');">
-                    </a>
-                    <div class="text py-4 d-block">
-                        <div class="meta">
-                            <div><a href="#">Sept 10, 2018</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary
-                            regelialia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20"
-                       style="background-image: url('{% static "assets/images/image_3.jpg" %}');">
-                    </a>
-                    <div class="text py-4 d-block">
-                        <div class="meta">
-                            <div><a href="#">Sept 10, 2018</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary
-                            regelialia.</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -6,7 +6,6 @@ from django.utils.safestring import mark_safe
 admin.site.register(Reservation)
 admin.site.register(DishCategory)
 admin.site.register(PostCategory)
-# admin.site.register(Tag)
 admin.site.register(PostImage)
 
 

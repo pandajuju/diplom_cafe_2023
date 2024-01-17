@@ -1,7 +1,6 @@
 from ckeditor.fields import RichTextField
 from django.db import models
 from django.core.validators import RegexValidator
-from django.utils import timezone
 from django.contrib.auth.models import User
 from django.utils.html import strip_tags
 
@@ -74,7 +73,6 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     is_visible = models.BooleanField(default=True)
     tags = models.ManyToManyField(Tag)
-    # image = models.ManyToManyField('PostImage', related_name='posts', blank=True)
 
     category = models.ForeignKey(PostCategory, on_delete=models.PROTECT, related_name='posts', default=1, null=True)
 
@@ -132,3 +130,8 @@ class Reservation(models.Model):
 
     class Meta:
         ordering = ('-created_at',)
+
+
+class Order(models.Model):
+    date = models.DateField()
+    time = models.TimeField()
