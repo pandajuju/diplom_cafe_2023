@@ -1,5 +1,5 @@
 from django import forms
-from .models import Reservation
+from .models import Reservation, UserData
 
 
 class ReservationForm(forms.ModelForm):
@@ -72,8 +72,5 @@ class BillingDetailsForm(forms.ModelForm):
                                                                                    'data-msg': 'Please enter a valid email'}))
 
     class Meta:
-        # model = Order
-        fields = ('first_name', 'last_name', 'street_name', 'house_number', 'phone', 'email_address', 'total_amount')
-        widgets = {
-            'total_amount': forms.HiddenInput(),
-        }
+        model = UserData
+        fields = ['first_name', 'last_name', 'street_name', 'house_number', 'phone', 'email_address']

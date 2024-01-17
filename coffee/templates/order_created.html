@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1>Order Confirmation</h1>
+    <p>Thank you for your purchase!</p>
+
+    <h2>Order Details</h2>
+    <p>Order ID: {{ order.id }}</p>
+    <p>Total Amount: ${{ order.total_amount }}</p>
+    <p>For any inquiries, please contact our customer support.</p>
+
+{% endblock %}

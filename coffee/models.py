@@ -132,6 +132,30 @@ class Reservation(models.Model):
         ordering = ('-created_at',)
 
 
+class UserData(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    order = models.ForeignKey('Order', on_delete=models.CASCADE)
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    street_name = models.CharField(max_length=255)
+    house_number = models.CharField(max_length=10)
+    phone = models.CharField(max_length=20)
+    email_address = models.EmailField()
+
+
+class OrderDishesList(models.Model):
+    order = models.ForeignKey('Order', on_delete=models.CASCADE)
+    dish = models.ForeignKey(Dish, on_delete=models.CASCADE)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    quantity = models.PositiveIntegerField(default=1)
+
+    def __str__(self):
+        return f"{self.order} - {self.dish.name}"
+
+
 class Order(models.Model):
-    date = models.DateField()
-    time = models.TimeField()
+    order_date = models.DateField(auto_now_add=True)
+    order_time = models.TimeField(auto_now_add=True)
+    order_status = models.CharField(max_length=100)
+
+

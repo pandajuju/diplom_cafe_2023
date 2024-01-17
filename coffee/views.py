@@ -11,7 +11,7 @@ from django.views.generic import TemplateView, ListView
 
 from account.forms import AuthenticatedMessageForm, AnonymousMessageForm
 from .forms import ReservationForm, BillingDetailsForm
-from .models import Post, DishCategory, Dish, Comment, PostCategory, Tag, Reservation
+from .models import Post, DishCategory, Dish, Comment, PostCategory, Tag, Reservation, OrderDishesList, UserData, Order
 from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponseRedirect, HttpResponse, Http404, HttpResponseBadRequest
 from django.urls import reverse_lazy, reverse
@@ -194,8 +194,8 @@ class CartPage(View):
     template_name = 'coffee_card.html'
 
     def get(self, request):
-        cart = request.session.get('cart', {})
         recent_posts = Post.objects.order_by('-date_posted')[:2]
+        cart = request.session.get('cart', {})
         products_in_cart = []
         total_amount = 0
         cart_items_count = 0
@@ -207,10 +207,8 @@ class CartPage(View):
             cart_items_count += quantity
             products_in_cart.append({'product': product, 'quantity': quantity, 'total_for_product': total_for_product})
 
-        # form = BillingDetailsForm(initial={'total_amount': total_amount}),
-
         context = {
-            'recent_posts' : recent_posts,
+            'recent_posts': recent_posts,
             'products_in_cart': products_in_cart,
             'total_amount': total_amount,
             'cart_items_count': cart_items_count,
@@ -271,20 +269,46 @@ class CheckoutPage(TemplateView):
         context['recent_posts'] = recent_posts
         context['categories_with_counts'] = categories_with_counts
         context['cart_items_count'] = cart_items_count
+        context['form'] = BillingDetailsForm()
         return context
 
     def post(self, request):
         form = BillingDetailsForm(request.POST)
         if form.is_valid():
-            order = form.save(commit=False)
-            order.total_amount = form.cleaned_data['total_amount']
-            order.save()
+            user_data = UserData.objects.create(
+                user=request.user,
+                first_name=form.cleaned_data['first_name'],
+                last_name=form.cleaned_data['last_name'],
+                street_name=form.cleaned_data['street_name'],
+                house_number=form.cleaned_data['house_number'],
+                phone=form.cleaned_data['phone'],
+                email_address=form.cleaned_data['email_address']
+            )
 
-            request.session['cart'] = {}
+            order = Order.objects.create(
+                user_data=user_data,
+                order_status='Pending'
+            )
 
-            return render(request, 'order_confirmation.html', {'order': order})
+            for product_id, quantity in request.session['cart'].items():
+                product = Dish.objects.get(id=product_id)
+                OrderDishesList.objects.create(
+                    order=order,
+                    dish=product,
+                    price=product.price,
+                    quantity=quantity
+                )
 
-    # return render(request, self.template_name, {'form': form})
+            del request.session['cart']
+
+            return render(request, 'order_created.html', {'order': order})
+        else:
+            context = {
+                'form': form,
+                'errors': form.errors
+            }
+
+        return render(request, self.template_name, context)
 
 
 class MessageFormMixin:
@@ -355,5 +379,3 @@ class BlogSinglePage(MessageFormMixin, TemplateView):
             context = self.get_context_data(**kwargs)
             context['form'] = comment_form
             return self.render_to_response(context)
-
-

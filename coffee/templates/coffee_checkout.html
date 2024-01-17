@@ -27,7 +27,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 ftco-animate">
-                    <form action="#" method="post" class="billing-form ftco-bg-dark p-3 p-md-5">
+                    <form action="{% url 'coffee:checkout' %}" method="post" class="billing-form ftco-bg-dark p-3 p-md-5">
                         {% csrf_token %}
                         <h3 class="mb-4 billing-heading">Billing Details</h3>
                         {{ form.non_field_errors }}
@@ -47,27 +47,14 @@
                             <div class="w-100"></div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    {{ form.street_address.label_tag }}
-                                    {{ form.street_address }}
+                                    {{ form.street_name.label_tag }}
+                                    {{ form.street_name }}
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    {{ form.apartment.label_tag }}
-                                    {{ form.apartment }}
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    {{ form.town_city.label_tag }}
-                                    {{ form.town_city }}
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    {{ form.postcode_zip.label_tag }}
-                                    {{ form.postcode_zip }}
+                                    {{ form.house_number.label_tag }}
+                                    {{ form.house_number }}
                                 </div>
                             </div>
                             <div class="w-100"></div>
