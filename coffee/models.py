@@ -1,3 +1,5 @@
+import uuid
+
 from ckeditor.fields import RichTextField
 from django.db import models
 from django.core.validators import RegexValidator
@@ -132,19 +134,35 @@ class Reservation(models.Model):
         ordering = ('-created_at',)
 
 
+class Order(models.Model):
+    order_id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
+    order_date = models.DateField(auto_now_add=True)
+    order_time = models.TimeField(auto_now_add=True)
+    order_status = models.CharField(max_length=100)
+
+    def __str__(self):
+        return f"Order {self.order_id} - {self.order_date} {self.order_time}"
+
+
 class UserData(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    order = models.ForeignKey('Order', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     street_name = models.CharField(max_length=255)
     house_number = models.CharField(max_length=10)
     phone = models.CharField(max_length=20)
     email_address = models.EmailField()
+    is_completed = models.BooleanField(default=False)
+
+    def __str__(self):
+        user_username = getattr(self.user, 'username', 'Unknown User')
+        return f"{user_username} - Order {self.order.order_id}"
 
 
 class OrderDishesList(models.Model):
     order = models.ForeignKey('Order', on_delete=models.CASCADE)
+    user_data = models.ForeignKey(UserData, on_delete=models.CASCADE)
     dish = models.ForeignKey(Dish, on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     quantity = models.PositiveIntegerField(default=1)
@@ -153,9 +171,6 @@ class OrderDishesList(models.Model):
         return f"{self.order} - {self.dish.name}"
 
 
-class Order(models.Model):
-    order_date = models.DateField(auto_now_add=True)
-    order_time = models.TimeField(auto_now_add=True)
-    order_status = models.CharField(max_length=100)
+
 
 

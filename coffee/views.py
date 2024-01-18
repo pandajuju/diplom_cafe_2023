@@ -195,8 +195,10 @@ class CartPage(View):
 
     def get(self, request):
         recent_posts = Post.objects.order_by('-date_posted')[:2]
+        category_name = 'Coffee'
         cart = request.session.get('cart', {})
         products_in_cart = []
+        dishes_coffee = Dish.objects.filter(category__name=category_name, is_visible=True)[:4]
         total_amount = 0
         cart_items_count = 0
 
@@ -208,11 +210,11 @@ class CartPage(View):
             products_in_cart.append({'product': product, 'quantity': quantity, 'total_for_product': total_for_product})
 
         context = {
+            'dishes_coffee': dishes_coffee,
             'recent_posts': recent_posts,
             'products_in_cart': products_in_cart,
             'total_amount': total_amount,
             'cart_items_count': cart_items_count,
-            # 'form': form,
         }
 
         return render(request, self.template_name, context)
@@ -265,18 +267,27 @@ class CheckoutPage(TemplateView):
         cart = self.request.session.get('cart', {})
         cart_items_count = sum(cart.values())
 
+        total_amount = 0
+        for product_id, quantity in cart.items():
+            product = Dish.objects.get(id=product_id)
+            total_amount += product.price * quantity
+
         context['tags'] = Tag.objects.all()
         context['recent_posts'] = recent_posts
         context['categories_with_counts'] = categories_with_counts
         context['cart_items_count'] = cart_items_count
+        context['total_amount'] = total_amount
         context['form'] = BillingDetailsForm()
         return context
 
     def post(self, request):
         form = BillingDetailsForm(request.POST)
         if form.is_valid():
+            order = Order.objects.create(order_status='Pending')
+
             user_data = UserData.objects.create(
-                user=request.user,
+                order=order,
+                user=request.user if request.user.is_authenticated else None,
                 first_name=form.cleaned_data['first_name'],
                 last_name=form.cleaned_data['last_name'],
                 street_name=form.cleaned_data['street_name'],
@@ -285,23 +296,22 @@ class CheckoutPage(TemplateView):
                 email_address=form.cleaned_data['email_address']
             )
 
-            order = Order.objects.create(
-                user_data=user_data,
-                order_status='Pending'
-            )
-
+            recent_posts = Post.objects.order_by('-date_posted')[:2]
+            total_amount = 0
             for product_id, quantity in request.session['cart'].items():
                 product = Dish.objects.get(id=product_id)
                 OrderDishesList.objects.create(
+                    user_data=user_data,
                     order=order,
                     dish=product,
                     price=product.price,
-                    quantity=quantity
-                )
+                    quantity=quantity)
+                total_amount += product.price * quantity
 
             del request.session['cart']
 
-            return render(request, 'order_created.html', {'order': order})
+            return render(request, 'order_created.html',
+                          {'order': order, 'total_amount': total_amount, 'recent_posts': recent_posts})
         else:
             context = {
                 'form': form,
@@ -312,7 +322,6 @@ class CheckoutPage(TemplateView):
 
 
 class MessageFormMixin:
-
     def get_message_form(self, request):
         if request.user.is_authenticated:
             return AuthenticatedMessageForm

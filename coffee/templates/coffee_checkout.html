@@ -27,9 +27,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 ftco-animate">
-                    <form action="{% url 'coffee:checkout' %}" method="post" class="billing-form ftco-bg-dark p-3 p-md-5">
+                    <form action="{% url 'coffee:checkout' %}" method="post"
+                          class="billing-form ftco-bg-dark p-3 p-md-5">
                         {% csrf_token %}
-                        <h3 class="mb-4 billing-heading">Billing Details</h3>
+                        <h3 class="mb-4 billing-heading ">Billing Details</h3>
                         {{ form.non_field_errors }}
                         <div class="row align-items-end">
                             <div class="col-md-6">
@@ -70,19 +71,11 @@
                                     {{ form.email_address }}
                                 </div>
                             </div>
-                            <div class="w-100"></div>
-                            <div class="col-md-12">
-                                <div class="form-group mt-4">
-                                    {{ form.create_account.label_tag }}
-                                    {{ form.create_account }}
-                                    <label><input type="radio" name="optradio"> Ship to different address</label>
-                                </div>
-                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary py-3 px-4">Place an order</button>
+                        <div class="mt-3 text-center">
+                            <button type="submit" class="btn btn-primary py-3 px-4 ">Place an order</button>
+                        </div>
                     </form>
-
-
                     <div class="row mt-5 pt-3 d-flex">
                         <div class="col-md-6 d-flex">
                             <div class="cart-detail cart-total ftco-bg-dark p-3 p-md-4">
@@ -106,53 +99,15 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="cart-detail ftco-bg-dark p-3 p-md-4">
-                                <h3 class="billing-heading mb-4">Payment Method</h3>
-                                <div class="form-group">
-                                    <div class="col-md-12">
-                                        <div class="radio">
-                                            <label><input type="radio" name="optradio" class="mr-2"> Direct Bank Tranfer</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-12">
-                                        <div class="radio">
-                                            <label><input type="radio" name="optradio" class="mr-2"> Check
-                                                Payment</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-12">
-                                        <div class="radio">
-                                            <label><input type="radio" name="optradio" class="mr-2"> Paypal</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-12">
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" value="" class="mr-2"> I have read and accept
-                                                the terms and conditions</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p><a href="#" class="btn btn-primary py-3 px-4">Place an order</a></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
-
-
                 <div class="col-xl-4 sidebar ftco-animate">
                     <div class="sidebar-box ftco-animate">
                         <div class="categories">
                             <h3>Categories</h3>
                             <ul class="list-unstyled ml-0 pl-0">
                                 {% for category in categories_with_counts %}
-                                    <li><a href="#">{{ category.name }}<span>({{ category.num_posts }})</span></a>
+                                    <li><a href="">{{ category.name }}<span>({{ category.num_posts }})</span></a>
                                     </li>
                                 {% endfor %}
                             </ul>
@@ -169,9 +124,10 @@
                                         <h3 class="heading"><a
                                                 href="{% url 'coffee:blog_single' post.id %}">{{ post.title }}</a></h3>
                                         <div class="meta">
-                                            <div><a href="#"><span
-                                                    class="icon-calendar"></span> {{ post.date_posted|date:"F d, Y" }}
-                                            </a>
+                                            <div>
+                                                <a href=""><span
+                                                        class="icon-calendar"></span> {{ post.date_posted|date:"F d, Y" }}
+                                                </a>
                                             </div>
                                             <div><a href="#"><span class="icon-person"></span> {{ post.author }}</a>
                                             </div>
@@ -192,8 +148,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
     </section>
