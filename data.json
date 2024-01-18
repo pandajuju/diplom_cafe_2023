@@ -1,0 +1,4634 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-01-09T08:42:34.839Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Drinks",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-01-09T08:42:58.779Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "hhhhhhhhhhhhhh",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-01-09T08:43:00.477Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "travel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-01-09T08:43:13.299Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "yjjglr",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-01-09T08:44:30.040Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Image 1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-01-09T08:44:38.908Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Image 2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-01-09T09:00:54.688Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "travel",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-01-09T09:00:54.714Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "yjjglr",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-01-09T09:02:23.703Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "Пост про кофе",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-01-09T09:03:04.845Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "coffee",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-01-09T09:14:29.335Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "Пост про кофе",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-01-09T09:15:06.989Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "travel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-01-09T09:16:25.714Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Кофе",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"post image\", \"object\": \"Image 3\"}}, {\"added\": {\"name\": \"tag-post relationship\", \"object\": \"Tag_posts object (4)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-01-09T10:20:12.993Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "drinks",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-01-09T10:20:32.445Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Кофе",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Posts\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-01-09T10:22:55.091Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Кофе",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-01-09T10:23:14.509Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "drinktag",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-01-09T10:23:19.071Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Кофе",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-01-09T10:23:48.783Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "ikjjjjjjjjjjj",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-01-09T10:24:03.282Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "5",
+        "object_repr": "jjjjmj",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-01-09T10:24:09.416Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "ikjjjjjjjjjjj",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Posts\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-01-09T10:24:19.404Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "ikjjjjjjjjjjj",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Posts\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-01-09T14:58:50.208Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Кофе",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Posts\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-01-09T15:45:55.284Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "Image 4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-01-09T15:47:19.356Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Кофе",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-01-09T15:50:09.476Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Кофе",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-01-09T15:54:50.619Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Кофе",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-01-09T15:58:54.966Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Кофе",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-01-09T16:02:13.265Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Content\", \"Tags\", \"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-01-09T16:13:26.014Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-01-09T16:13:52.344Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-01-09T16:14:48.191Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-01-09T16:15:43.265Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-01-09T16:16:05.833Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-01-09T16:16:34.235Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-01-09T16:17:04.960Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-01-09T16:17:19.472Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "coffee",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-01-09T16:17:19.499Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "drinktag",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-01-09T16:17:19.521Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "5",
+        "object_repr": "jjjjmj",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-01-09T16:19:49.312Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "MENU/menu",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-01-09T16:20:18.818Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "BLOG/blog",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-01-09T16:20:33.704Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "3",
+        "object_repr": "SERVICES/services",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-01-09T16:23:36.352Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "4",
+        "object_repr": "ABOUT/about",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2024-01-09T16:23:58.614Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "5",
+        "object_repr": "SHOP/shop",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2024-01-09T16:24:17.023Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "6",
+        "object_repr": "CONTACT/contact",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2024-01-09T16:24:40.028Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "3",
+        "object_repr": "SERVICES/services",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is visible\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2024-01-09T20:23:41.863Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Travel",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2024-01-09T20:25:58.772Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Coffee",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2024-01-09T20:26:06.199Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Hotel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2024-01-09T20:26:16.988Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Drinks",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2024-01-09T20:26:29.337Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "Foods",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2024-01-09T20:26:35.941Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "Tour",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2024-01-09T20:26:51.316Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "6",
+        "object_repr": "LIFE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2024-01-09T20:26:58.220Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "7",
+        "object_repr": "SPORT",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2024-01-09T20:27:04.199Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "8",
+        "object_repr": "TRAVEL",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2024-01-09T20:27:37.773Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "9",
+        "object_repr": "COFFEE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2024-01-09T20:27:40.963Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2024-01-09T21:32:38.535Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "ikjjjjjjjjjjj",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2024-01-10T00:00:37.615Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "ikjjjjjjjjjjj",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2024-01-10T00:00:55.967Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2024-01-10T00:01:48.695Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Comment by panda on Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\", \"Parent\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2024-01-10T00:02:16.954Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Comment by panda on Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2024-01-10T00:02:57.942Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "Image 4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2024-01-10T00:07:04.594Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "Turkish Coffee: The Art of Preparation and Cultural Heritage",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2024-01-10T00:09:03.885Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "5",
+        "object_repr": "Image 5",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2024-01-10T10:00:12.323Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Основные блюда",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2024-01-10T10:00:21.923Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Dish object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2024-01-10T10:00:47.228Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Dish object (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2024-01-10T10:03:55.177Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Desserts",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2024-01-10T10:04:00.770Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "Dish object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2024-01-10T10:04:11.331Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Основные блюда",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2024-01-10T10:04:34.817Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Starter",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2024-01-10T10:04:39.593Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Desserts",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2024-01-10T10:05:01.900Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "MAIN DISH",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2024-01-10T10:05:07.403Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "DESSERTS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Order\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2024-01-10T10:05:12.016Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "STARTER",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2024-01-10T10:05:29.438Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "DRINKS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2024-01-10T10:06:38.256Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Dish object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2024-01-10T10:07:49.094Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "Dish object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2024-01-10T10:08:09.441Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "Dish object (4)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2024-01-10T10:09:05.081Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "5",
+        "object_repr": "Dish object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2024-01-10T10:09:25.432Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "5",
+        "object_repr": "Dish object (5)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2024-01-10T10:10:33.461Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "6",
+        "object_repr": "Dish object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2024-01-10T10:11:13.462Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "7",
+        "object_repr": "Dish object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2024-01-10T10:16:22.828Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "8",
+        "object_repr": "Dish object (8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2024-01-10T10:17:22.936Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "9",
+        "object_repr": "Dish object (9)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2024-01-10T10:18:19.646Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "10",
+        "object_repr": "Dish object (10)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2024-01-12T11:04:27.210Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2024-01-12T11:04:34.382Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is precessed\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2024-01-12T11:04:41.565Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2024-01-12T11:15:50.287Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Coffee",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2024-01-12T11:17:56.500Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "11",
+        "object_repr": "Dish object (11)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2024-01-12T11:21:20.783Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "12",
+        "object_repr": "Dish object (12)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2024-01-12T11:27:40.740Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "13",
+        "object_repr": "Dish object (13)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2024-01-12T11:27:55.582Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Coffee",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2024-01-12T11:28:39.616Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "13",
+        "object_repr": "Dish object (13)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2024-01-12T11:40:21.179Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "13",
+        "object_repr": "Dish object (13)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2024-01-12T11:41:56.495Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Starter",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2024-01-12T11:42:03.522Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Main DIsh",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2024-01-12T11:42:08.305Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Desserts",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2024-01-12T11:42:13.986Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "Drinks",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2024-01-12T11:50:41.973Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "14",
+        "object_repr": "Dish object (14)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2024-01-12T15:37:51.645Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Starter",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is visible\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2024-01-12T15:48:22.243Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "15",
+        "object_repr": "Dish object (15)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2024-01-12T15:52:04.092Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "15",
+        "object_repr": "Dish object (15)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2024-01-12T15:54:38.011Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "16",
+        "object_repr": "Dish object (16)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2024-01-12T15:56:21.476Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "17",
+        "object_repr": "Dish object (17)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2024-01-12T15:56:52.843Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "17",
+        "object_repr": "Dish object (17)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2024-01-12T15:56:52.858Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "16",
+        "object_repr": "Dish object (16)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2024-01-12T15:56:52.872Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "15",
+        "object_repr": "Dish object (15)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2024-01-12T15:58:11.824Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "12",
+        "object_repr": "Dish object (12)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2024-01-12T16:02:59.651Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "18",
+        "object_repr": "Dish object (18)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2024-01-12T16:09:15.227Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "19",
+        "object_repr": "Dish object (19)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2024-01-12T16:09:34.107Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "19",
+        "object_repr": "Dish object (19)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2024-01-12T16:13:25.737Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "20",
+        "object_repr": "Dish object (20)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2024-01-12T16:23:19.195Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "21",
+        "object_repr": "Dish object (21)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2024-01-12T16:24:37.187Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Starter",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2024-01-12T16:28:16.105Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Coffee",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2024-01-12T16:28:20.545Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Main DIsh",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2024-01-12T16:28:25.779Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Desserts",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2024-01-12T16:28:30.288Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Desserts",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Order\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2024-01-12T16:32:54.492Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "22",
+        "object_repr": "Dish object (22)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2024-01-12T22:00:38.258Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "23",
+        "object_repr": "Dish object (23)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2024-01-12T22:02:47.512Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "23",
+        "object_repr": "Dish object (23)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2024-01-12T22:36:23.709Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "23",
+        "object_repr": "Dish object (23)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is visible\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2024-01-12T22:36:41.424Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "11",
+        "object_repr": "Dish object (11)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is visible\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+        "action_time": "2024-01-12T22:37:08.013Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "23",
+        "object_repr": "Dish object (23)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is visible\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+        "action_time": "2024-01-12T22:37:08.014Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "11",
+        "object_repr": "Dish object (11)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is visible\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+        "action_time": "2024-01-15T12:46:55.929Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Coffee: Enjoyment and Science in a Cup",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+        "action_time": "2024-01-15T12:48:19.559Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "5",
+        "object_repr": "dddddddddddddddd",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+        "action_time": "2024-01-15T12:48:37.338Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "dddddddddaaaaa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+        "action_time": "2024-01-15T12:57:38.044Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "dddddddddaaaaa",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+        "action_time": "2024-01-15T12:57:38.060Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "5",
+        "object_repr": "dddddddddddddddd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+        "action_time": "2024-01-15T15:46:01.398Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is precessed\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+        "action_time": "2024-01-15T15:46:14.430Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+        "action_time": "2024-01-15T15:46:14.444Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+        "action_time": "2024-01-15T15:57:47.150Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "7",
+        "object_repr": "hhhhhhh",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+        "action_time": "2024-01-15T16:00:50.123Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "7",
+        "object_repr": "hhhhhhh",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+        "action_time": "2024-01-16T12:38:17.277Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is precessed\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+        "action_time": "2024-01-16T12:47:24.145Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "7",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+        "action_time": "2024-01-16T12:47:24.163Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "6",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+        "action_time": "2024-01-16T12:47:24.182Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+        "action_time": "2024-01-16T12:47:24.202Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+        "action_time": "2024-01-17T07:53:38.882Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "9",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+        "action_time": "2024-01-17T07:53:38.904Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "8",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+        "action_time": "2024-01-17T07:59:12.586Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "11",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+        "action_time": "2024-01-17T07:59:12.607Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "10",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+        "action_time": "2024-01-17T08:01:49.174Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "12",
+        "object_repr": "USTIMOVA - 0505030179",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+        "action_time": "2024-01-17T08:26:50.334Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "10",
+        "object_repr": "CAFEADVENTURES",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+        "action_time": "2024-01-17T08:26:58.707Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "8",
+        "object_repr": "Exploring the World, One Sip at a Time! 🌍☕",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+        "action_time": "2024-01-17T08:31:03.918Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "Image 6",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+        "action_time": "2024-01-17T08:31:14.232Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "7",
+        "object_repr": "Image 7",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+        "action_time": "2024-01-17T08:35:24.052Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "11",
+        "object_repr": "FinnishBlueberryPie",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+        "action_time": "2024-01-17T08:36:04.379Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "12",
+        "object_repr": "FINNISHBLUEBERRYPIE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+        "action_time": "2024-01-17T08:36:19.108Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "13",
+        "object_repr": "CULINARYHERITAGE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+        "action_time": "2024-01-17T08:36:27.532Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "14",
+        "object_repr": "NORDICFLAVORS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+        "action_time": "2024-01-17T08:54:37.785Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "Delve into the rich history of our beloved Finnish Blueberry Pie! 🇫🇮🥧✨",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+        "action_time": "2024-01-17T08:57:23.188Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "Delve into the rich history of our beloved Finnish Blueberry Pie! 🇫🇮🥧✨",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+        "action_time": "2024-01-17T08:58:00.398Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "8",
+        "object_repr": "Image 8",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+        "action_time": "2024-01-17T08:59:21.652Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "8",
+        "object_repr": "Image 8",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Post image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+        "action_time": "2024-01-17T09:00:08.840Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "Delve into the rich history of our beloved Finnish Blueberry Pie! 🇫🇮🥧✨",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+        "action_time": "2024-01-17T09:00:22.996Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "12",
+        "object_repr": "FINNISHBLUEBERRYPIE",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+        "action_time": "2024-01-17T09:01:00.865Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "Delve into the rich history of our beloved Finnish Blueberry Pie! 🇫🇮🥧✨",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+        "action_time": "2024-01-17T09:01:20.508Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "13",
+        "object_repr": "CulinaryHeritage",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tag name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 165,
+    "fields": {
+        "action_time": "2024-01-17T09:01:42.459Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "10",
+        "object_repr": "CafeDelights",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tag name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 166,
+    "fields": {
+        "action_time": "2024-01-17T09:01:52.227Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "9",
+        "object_repr": "Coffee",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tag name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 167,
+    "fields": {
+        "action_time": "2024-01-17T09:02:03.887Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "6",
+        "object_repr": "Life",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tag name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 168,
+    "fields": {
+        "action_time": "2024-01-17T09:02:22.727Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "14",
+        "object_repr": "NordicFlavors",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tag name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 169,
+    "fields": {
+        "action_time": "2024-01-17T09:02:32.492Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "7",
+        "object_repr": "Sport",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tag name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 170,
+    "fields": {
+        "action_time": "2024-01-17T09:02:44.219Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "8",
+        "object_repr": "Travel",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Tag name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 171,
+    "fields": {
+        "action_time": "2024-01-17T09:17:23.415Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "Delve into the rich history of our beloved Finnish Blueberry Pie! 🇫🇮🥧✨",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 172,
+    "fields": {
+        "action_time": "2024-01-17T09:18:26.610Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "15",
+        "object_repr": "SodaSensation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 173,
+    "fields": {
+        "action_time": "2024-01-17T09:18:40.568Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "16",
+        "object_repr": "Drink",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 174,
+    "fields": {
+        "action_time": "2024-01-17T09:18:57.012Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "17",
+        "object_repr": "FizzAndFun",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 175,
+    "fields": {
+        "action_time": "2024-01-17T09:19:17.456Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "18",
+        "object_repr": "ThirstQuencher",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 176,
+    "fields": {
+        "action_time": "2024-01-17T09:21:48.108Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "10",
+        "object_repr": "Step into a world where every sip is a celebration of taste at! 🥤✨",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 177,
+    "fields": {
+        "action_time": "2024-01-17T09:22:01.400Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "9",
+        "object_repr": "Image 9",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 178,
+    "fields": {
+        "action_time": "2024-01-17T09:23:30.892Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "10",
+        "object_repr": "Step into a world where every sip is a celebration of taste at! 🥤✨",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 179,
+    "fields": {
+        "action_time": "2024-01-17T09:24:05.620Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "10",
+        "object_repr": "Step into a world where every sip is a celebration of taste at! 🥤✨",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 180,
+    "fields": {
+        "action_time": "2024-01-17T09:24:34.044Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "10",
+        "object_repr": "Step into a world where every sip is a celebration of taste at! 🥤✨",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 181,
+    "fields": {
+        "action_time": "2024-01-17T09:36:13.741Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "11",
+        "object_repr": "Embark on a Culinary Staycation: Discover the Tranquil Retreat ! 🏨☕",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 182,
+    "fields": {
+        "action_time": "2024-01-17T09:37:46.851Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "10",
+        "object_repr": "Image 10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 183,
+    "fields": {
+        "action_time": "2024-01-17T09:41:50.743Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "19",
+        "object_repr": "CoffeeTour",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 184,
+    "fields": {
+        "action_time": "2024-01-17T09:42:01.738Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "20",
+        "object_repr": "CafeAdventure",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 185,
+    "fields": {
+        "action_time": "2024-01-17T09:42:09.050Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "12",
+        "object_repr": "Get ready for a caffeine-fueled adventure with the Coffee Tour! ☕✈️",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 186,
+    "fields": {
+        "action_time": "2024-01-17T09:44:52.091Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "11",
+        "object_repr": "Image 11",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 187,
+    "fields": {
+        "action_time": "2024-01-17T11:43:30.045Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "11",
+        "object_repr": "Embark on a Culinary Staycation: Discover the Tranquil Retreat ! 🏨☕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 188,
+    "fields": {
+        "action_time": "2024-01-17T11:44:20.000Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "11",
+        "object_repr": "Embark on a Culinary Staycation: Discover the Tranquil Retreat ! 🏨☕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 189,
+    "fields": {
+        "action_time": "2024-01-17T11:44:38.996Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "11",
+        "object_repr": "Embark on a Culinary Staycation: Discover the Tranquil Retreat ! 🏨☕",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 190,
+    "fields": {
+        "action_time": "2024-01-17T21:41:12.423Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "panda",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 191,
+    "fields": {
+        "action_time": "2024-01-17T21:41:27.610Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "1 - Beef Ribs",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 192,
+    "fields": {
+        "action_time": "2024-01-17T21:44:45.943Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "panda",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 193,
+    "fields": {
+        "action_time": "2024-01-17T21:44:58.900Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "2 - Beef Ribs",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 194,
+    "fields": {
+        "action_time": "2024-01-17T23:04:45.118Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "2",
+        "object_repr": "Order 445de4f4-6f3a-4296-a5b9-569773dd91cb - 2024-01-17 23:00:27.762485",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 195,
+    "fields": {
+        "action_time": "2024-01-17T23:04:45.132Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "1",
+        "object_repr": "Order 3008cb61-762e-4625-ad4d-d623a69255e9 - 2024-01-17 22:56:13.137596",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 196,
+    "fields": {
+        "action_time": "2024-01-17T23:15:01.003Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "3",
+        "object_repr": "panda - Order 078e39df-26d1-4567-807b-90df2b5ea0ef",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 197,
+    "fields": {
+        "action_time": "2024-01-17T23:15:01.018Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "panda - Order fbd8a4c1-82ac-429e-9319-819a768c5ea4",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 198,
+    "fields": {
+        "action_time": "2024-01-17T23:15:15.589Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "6",
+        "object_repr": "Order c10ddfce-92c7-40fe-90ad-41ff75e54a09 - 2024-01-17 23:13:56.702480",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 199,
+    "fields": {
+        "action_time": "2024-01-17T23:15:15.607Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "5",
+        "object_repr": "Order 12758e85-cf78-4d50-8879-c23f47e5c8cf - 2024-01-17 23:08:50.311113",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 200,
+    "fields": {
+        "action_time": "2024-01-17T23:15:15.621Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "4",
+        "object_repr": "Order 078e39df-26d1-4567-807b-90df2b5ea0ef - 2024-01-17 23:06:01.000908",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 201,
+    "fields": {
+        "action_time": "2024-01-17T23:15:15.637Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "3",
+        "object_repr": "Order fbd8a4c1-82ac-429e-9319-819a768c5ea4 - 2024-01-17 23:05:01.440359",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 202,
+    "fields": {
+        "action_time": "2024-01-18T08:18:00.184Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "4",
+        "object_repr": "panda - Order 86543e37-430b-4cb8-acbb-54e08fcb33cd",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"User\", \"Is completed\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 203,
+    "fields": {
+        "action_time": "2024-01-18T08:19:14.175Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "7",
+        "object_repr": "Order 041f5c5e-7095-49db-addd-213f1cbbe29d - 2024-01-17 23:16:43.526625",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Order status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 204,
+    "fields": {
+        "action_time": "2024-01-18T08:19:30.913Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "10",
+        "object_repr": "Order 86543e37-430b-4cb8-acbb-54e08fcb33cd - 2024-01-18 08:17:01.601591",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 205,
+    "fields": {
+        "action_time": "2024-01-18T08:19:30.926Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "9",
+        "object_repr": "Order 7d4b3084-f096-48ec-abae-6ec614f63fcd - 2024-01-18 08:15:52.995757",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 206,
+    "fields": {
+        "action_time": "2024-01-18T08:19:30.939Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "8",
+        "object_repr": "Order ac09b63a-26b9-4938-9148-e2b6b939ab57 - 2024-01-18 08:15:41.999947",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 207,
+    "fields": {
+        "action_time": "2024-01-18T08:19:30.958Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "7",
+        "object_repr": "Order 041f5c5e-7095-49db-addd-213f1cbbe29d - 2024-01-17 23:16:43.526625",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 208,
+    "fields": {
+        "action_time": "2024-01-18T12:29:24.852Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "29",
+        "object_repr": "Order f30ede6f-e989-4a73-9da6-56fe5908f004 - 2024-01-18 12:28:43.268561",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 209,
+    "fields": {
+        "action_time": "2024-01-18T12:29:24.874Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "28",
+        "object_repr": "Order 64ecc3b3-3a44-4677-b224-ea67d3e6d945 - 2024-01-18 12:27:29.916709",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 210,
+    "fields": {
+        "action_time": "2024-01-18T12:29:24.894Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "27",
+        "object_repr": "Order 24b42d48-0f3c-4788-ae3a-01fc53f124df - 2024-01-18 12:26:13.235311",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 211,
+    "fields": {
+        "action_time": "2024-01-18T12:29:24.915Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "26",
+        "object_repr": "Order ba7b4b30-3092-405d-867a-693894a7e92f - 2024-01-18 12:24:41.405908",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 212,
+    "fields": {
+        "action_time": "2024-01-18T12:29:24.935Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "25",
+        "object_repr": "Order 2a1233a0-2ee1-4eb5-a83a-90b45c915fd4 - 2024-01-18 12:20:33.852925",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 213,
+    "fields": {
+        "action_time": "2024-01-18T12:29:24.956Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "24",
+        "object_repr": "Order bcb1ae5d-ae7b-400d-9522-85c737441ed0 - 2024-01-18 12:15:14.730177",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 214,
+    "fields": {
+        "action_time": "2024-01-18T12:29:24.976Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "23",
+        "object_repr": "Order fd600e03-a0e1-4a73-b750-c6300f49c5e4 - 2024-01-18 12:15:00.379427",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 215,
+    "fields": {
+        "action_time": "2024-01-18T12:29:24.997Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "22",
+        "object_repr": "Order 9c1098cd-fc87-4a59-acb0-34c2521dd7a6 - 2024-01-18 12:14:43.605723",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 216,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.018Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "21",
+        "object_repr": "Order 0b1f76df-9c38-4269-ba19-8891c4c2e0da - 2024-01-18 12:14:28.457374",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 217,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.039Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "20",
+        "object_repr": "Order 03e50242-b600-42d0-9b20-fd967a979d0c - 2024-01-18 12:13:45.173158",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 218,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.059Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "19",
+        "object_repr": "Order 003d5b28-3cbd-467d-a418-e41d0ca688ec - 2024-01-18 12:13:31.861063",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 219,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.081Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "18",
+        "object_repr": "Order 61e61416-13a0-41b6-a464-d839795f0ba0 - 2024-01-18 11:56:56.747626",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 220,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.100Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "17",
+        "object_repr": "Order e28fb8f4-8ddb-4bf8-a6cc-3119ac19f9f1 - 2024-01-18 11:52:08.508212",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 221,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.121Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "16",
+        "object_repr": "Order a003f44e-c6c0-43ac-9bd0-bc326a7312a9 - 2024-01-18 09:18:09.964899",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 222,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.141Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "15",
+        "object_repr": "Order 02d70bcf-5397-4d82-9e9d-d2fbb12d0583 - 2024-01-18 09:16:04.665178",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 223,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.163Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "14",
+        "object_repr": "Order 7e7ec822-b218-4e01-9467-ae158ce475af - 2024-01-18 09:15:08.332629",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 224,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.183Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "13",
+        "object_repr": "Order 7c983418-20c2-4b31-9f99-b7d5132f0dca - 2024-01-18 09:14:52.836964",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 225,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.204Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "12",
+        "object_repr": "Order 5801db01-1d1a-493b-8619-d63750e696d5 - 2024-01-18 09:12:34.493963",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 226,
+    "fields": {
+        "action_time": "2024-01-18T12:29:25.232Z",
+        "user": 1,
+        "content_type": 18,
+        "object_id": "11",
+        "object_repr": "Order fa6aa0d9-33ce-4598-941e-a10b778854fd - 2024-01-18 08:32:29.384464",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add dish category",
+        "content_type": 7,
+        "codename": "add_dishcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change dish category",
+        "content_type": 7,
+        "codename": "change_dishcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete dish category",
+        "content_type": 7,
+        "codename": "delete_dishcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view dish category",
+        "content_type": 7,
+        "codename": "view_dishcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add gallery",
+        "content_type": 8,
+        "codename": "add_gallery"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change gallery",
+        "content_type": 8,
+        "codename": "change_gallery"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete gallery",
+        "content_type": 8,
+        "codename": "delete_gallery"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view gallery",
+        "content_type": 8,
+        "codename": "view_gallery"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add post category",
+        "content_type": 9,
+        "codename": "add_postcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change post category",
+        "content_type": 9,
+        "codename": "change_postcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete post category",
+        "content_type": 9,
+        "codename": "delete_postcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view post category",
+        "content_type": 9,
+        "codename": "view_postcategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add reservation",
+        "content_type": 10,
+        "codename": "add_reservation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change reservation",
+        "content_type": 10,
+        "codename": "change_reservation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete reservation",
+        "content_type": 10,
+        "codename": "delete_reservation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view reservation",
+        "content_type": 10,
+        "codename": "view_reservation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add dish",
+        "content_type": 11,
+        "codename": "add_dish"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change dish",
+        "content_type": 11,
+        "codename": "change_dish"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete dish",
+        "content_type": 11,
+        "codename": "delete_dish"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view dish",
+        "content_type": 11,
+        "codename": "view_dish"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add post",
+        "content_type": 12,
+        "codename": "add_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change post",
+        "content_type": 12,
+        "codename": "change_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete post",
+        "content_type": 12,
+        "codename": "delete_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view post",
+        "content_type": 12,
+        "codename": "view_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add comment",
+        "content_type": 13,
+        "codename": "add_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change comment",
+        "content_type": 13,
+        "codename": "change_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete comment",
+        "content_type": 13,
+        "codename": "delete_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view comment",
+        "content_type": 13,
+        "codename": "view_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add post image",
+        "content_type": 14,
+        "codename": "add_postimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change post image",
+        "content_type": 14,
+        "codename": "change_postimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete post image",
+        "content_type": 14,
+        "codename": "delete_postimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view post image",
+        "content_type": 14,
+        "codename": "view_postimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add tag",
+        "content_type": 15,
+        "codename": "add_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change tag",
+        "content_type": 15,
+        "codename": "change_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete tag",
+        "content_type": 15,
+        "codename": "delete_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view tag",
+        "content_type": 15,
+        "codename": "view_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add main menu items",
+        "content_type": 16,
+        "codename": "add_mainmenuitems"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change main menu items",
+        "content_type": 16,
+        "codename": "change_mainmenuitems"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete main menu items",
+        "content_type": 16,
+        "codename": "delete_mainmenuitems"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view main menu items",
+        "content_type": 16,
+        "codename": "view_mainmenuitems"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add order dishes list",
+        "content_type": 17,
+        "codename": "add_orderdisheslist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change order dishes list",
+        "content_type": 17,
+        "codename": "change_orderdisheslist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete order dishes list",
+        "content_type": 17,
+        "codename": "delete_orderdisheslist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view order dishes list",
+        "content_type": 17,
+        "codename": "view_orderdisheslist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add order",
+        "content_type": 18,
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change order",
+        "content_type": 18,
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete order",
+        "content_type": 18,
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view order",
+        "content_type": 18,
+        "codename": "view_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add user data",
+        "content_type": 19,
+        "codename": "add_userdata"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change user data",
+        "content_type": 19,
+        "codename": "change_userdata"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete user data",
+        "content_type": 19,
+        "codename": "delete_userdata"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view user data",
+        "content_type": 19,
+        "codename": "view_userdata"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$ds7rz6BXRN92NvMaj8VNhQ$GReOxFqPSjdFoZT6/9itg+HY2EBbDQqqnIjYK8HULK4=",
+        "last_login": "2024-01-18T08:16:00.073Z",
+        "is_superuser": true,
+        "username": "panda",
+        "first_name": "",
+        "last_name": "",
+        "email": "u.juliana.serg@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-01-09T08:41:48.963Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$45q6WAVzc3foA6jFdeKrEA$2d+hRnqQrqYiiLeUEgip7ba2qE95T83fad0D79R3ADw=",
+        "last_login": "2024-01-11T11:07:45.580Z",
+        "is_superuser": false,
+        "username": "user2",
+        "first_name": "",
+        "last_name": "",
+        "email": "user2@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-01-11T09:27:03.221Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "coffee",
+        "model": "dishcategory"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "coffee",
+        "model": "gallery"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "coffee",
+        "model": "postcategory"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "coffee",
+        "model": "reservation"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "coffee",
+        "model": "dish"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "coffee",
+        "model": "post"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "coffee",
+        "model": "comment"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "coffee",
+        "model": "postimage"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "coffee",
+        "model": "tag"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "main_app",
+        "model": "mainmenuitems"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "coffee",
+        "model": "orderdisheslist"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "coffee",
+        "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "coffee",
+        "model": "userdata"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1ifajhht7wg1o6mfyie8w50o9flbyn35",
+    "fields": {
+        "session_data": "eyJjYXJ0Ijp7IjEwIjoxfX0:1rNZQk:H2pz09nVF2Pq_3FSWMjItZ630oVIy0b3g126YJiy4SI",
+        "expire_date": "2024-01-24T14:19:42.240Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lmswm12ytrdmd9bwblnujdim4658lsnf",
+    "fields": {
+        "session_data": ".eJxVjEsOgzAMBe_idRXhkISYZfc9A7KJU2grkPisEHcvSCza7Zt5s0HD69I166xT0yeoAeH2uwm3bx1OkF48PEfTjsMy9WJOxVx0No8x6ed-uX-BjufueAfCgrMK2pB9DtFSJhXnSslBKvZELhUYyixSYsWFqBKhdxijBpv4iLY8LVBvgBZqu-9fhdw8QA:1rOQsd:h4zEn5-NcjlFaFwOgEP0F1H2yAxkJ_Nt1-IbZn6XlCo",
+        "expire_date": "2024-01-26T23:24:03.967Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "te6sbp2hfzxbx7in9q7mmyb807ar3gvm",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWmYUoaOS_eeoZmhU4saSCisjHdXEha6_e-9_zKRt7XEreoSx2TOBszpdxMeHjrtIN15us12mKd1GcXuij1otdc56fNyuH8HhWv51kjQcFYBh7nLGBxlUvG-lYzSc0fkUwPYZpEWem5ElQg6DyEousTm_QHlPTfh:1rQRWn:fZckJG7sGLu7tqF7_QQ3A5zFTl6TBd72timXWCo1twU",
+        "expire_date": "2024-02-01T12:29:49.319Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "x7av281qff4z62w8timzc2ifkj35cqlq",
+    "fields": {
+        "session_data": "e30:1rQNa9:NdPV6N_et1nZyXnztU16_DvN5tiPZvEEJ1wO0d7SXVI",
+        "expire_date": "2024-02-01T08:17:01.683Z"
+    }
+},
+{
+    "model": "coffee.dishcategory",
+    "pk": 2,
+    "fields": {
+        "name": "Desserts",
+        "order": 2,
+        "is_visible": true
+    }
+},
+{
+    "model": "coffee.dishcategory",
+    "pk": 4,
+    "fields": {
+        "name": "Main DIsh",
+        "order": 1,
+        "is_visible": true
+    }
+},
+{
+    "model": "coffee.dishcategory",
+    "pk": 5,
+    "fields": {
+        "name": "Drinks",
+        "order": 4,
+        "is_visible": true
+    }
+},
+{
+    "model": "coffee.dishcategory",
+    "pk": 6,
+    "fields": {
+        "name": "Coffee",
+        "order": 3,
+        "is_visible": true
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 2,
+    "fields": {
+        "name": "Berry Tart",
+        "slug": "berry-tart",
+        "description": "Fresh berries on a crisp crust with a delicate cream.",
+        "price": "2.90",
+        "photo": "dishes/dessert-3_xcLtP8m.jpg",
+        "is_visible": true,
+        "order": 1,
+        "category": 2
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 3,
+    "fields": {
+        "name": "Finnish Blueberry Pie",
+        "slug": "finnish-blueberry-pie",
+        "description": "A delightful combination of juicy blueberries, sweet filling, and a buttery crust.",
+        "price": "4.10",
+        "photo": "dishes/dessert-4_JpNXpGo.jpg",
+        "is_visible": true,
+        "order": 2,
+        "category": 2
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 4,
+    "fields": {
+        "name": "Tropical Fruit Fireworks",
+        "slug": "tropical-fruit-fireworks",
+        "description": "Juicy banana, kiwi, orange coated in chocolate topping.",
+        "price": "2.25",
+        "photo": "dishes/dessert-5_cUxirff.jpg",
+        "is_visible": true,
+        "order": 3,
+        "category": 2
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 5,
+    "fields": {
+        "name": "Buckwheat Pancakes",
+        "slug": "buckwheat-pancakes",
+        "description": "Tender pancakes made with buckwheat flour - a delicious and nutritious choice for a morning treat.",
+        "price": "3.95",
+        "photo": "dishes/dessert-6_FwfTCN6.jpg",
+        "is_visible": true,
+        "order": 4,
+        "category": 2
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 6,
+    "fields": {
+        "name": "Wheat Pancakes",
+        "slug": "wheat-pancakes",
+        "description": "Tender batter, golden crispy edges. Perfect with your favorite toppings.",
+        "price": "2.50",
+        "photo": "dishes/dessert-2_lWmfrZa.jpg",
+        "is_visible": true,
+        "order": 5,
+        "category": 2
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 7,
+    "fields": {
+        "name": "Orange Lemonade",
+        "slug": "orange-lemonade",
+        "description": "A perfect blend of fresh orange and a hint of zesty lemon in every sip.",
+        "price": "1.15",
+        "photo": "dishes/drink-1_E4pM2gK.jpg",
+        "is_visible": true,
+        "order": 1,
+        "category": 5
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 8,
+    "fields": {
+        "name": "Strawberry lemonade",
+        "slug": "strawberry-lemonade",
+        "description": "The fresh taste of ripe strawberries with a hint of zesty lemon, creating a wonderfully refreshing combination.",
+        "price": "1.30",
+        "photo": "dishes/drink-6_x7OjARM.jpg",
+        "is_visible": true,
+        "order": 2,
+        "category": 5
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 9,
+    "fields": {
+        "name": "Beef Steak",
+        "slug": "beef-steak",
+        "description": "A flavorful and succulent cut, cooked to your preference: medium rare, medium, or well done.",
+        "price": "14.90",
+        "photo": "dishes/dish-1_e1L2VS7.jpg",
+        "is_visible": true,
+        "order": 1,
+        "category": 4
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 10,
+    "fields": {
+        "name": "Beef Ribs",
+        "slug": "beef-ribs",
+        "description": "Juicy and flavorful meat cuts, prepared with favorite spices, promise a true taste festival.",
+        "price": "13.95",
+        "photo": "dishes/dish-2_TUHIINM.jpg",
+        "is_visible": true,
+        "order": 2,
+        "category": 4
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 11,
+    "fields": {
+        "name": "Iced Americano with milk",
+        "slug": "iced-americano-with-milk",
+        "description": "Refreshing Iced Americano with milk: espresso, ice, creaminess – your burst of refreshment!",
+        "price": "3.90",
+        "photo": "dishes/menu-3.jpg",
+        "is_visible": true,
+        "order": 1,
+        "category": 6
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 12,
+    "fields": {
+        "name": "Cappuccino",
+        "slug": "capuccino",
+        "description": "Gentle Coffee Cappuccino: espresso paired with frothy milk. Start your perfect morning here!",
+        "price": "3.30",
+        "photo": "dishes/menu-4.jpg",
+        "is_visible": true,
+        "order": 2,
+        "category": 6
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 13,
+    "fields": {
+        "name": "Almond Cappuccino",
+        "slug": "almond-cappuccino",
+        "description": "Aromatic espresso meets the velvety sweetness of almond milk. Pure morning indulgence!",
+        "price": "5.20",
+        "photo": "dishes/menu-1_Vaa5gmd.jpg",
+        "is_visible": true,
+        "order": 3,
+        "category": 6
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 14,
+    "fields": {
+        "name": "Grilled trout",
+        "slug": "grilled-trout",
+        "description": "Juicy grilled trout with salad and cherry tomatoes.",
+        "price": "16.40",
+        "photo": "dishes/dish-6.jpg",
+        "is_visible": true,
+        "order": 3,
+        "category": 4
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 18,
+    "fields": {
+        "name": "Soda drinks",
+        "slug": "soda-drinks",
+        "description": "Perfect carbonated drinks for a true refreshment.",
+        "price": "2.60",
+        "photo": "dishes/drink-3.jpg",
+        "is_visible": true,
+        "order": 3,
+        "category": 5
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 19,
+    "fields": {
+        "name": "Shrimps",
+        "slug": "shrimps",
+        "description": "The perfect combination of crispy skin and juicy shrimp meat that will delight your taste buds.",
+        "price": "17.10",
+        "photo": "dishes/dish-5.jpg",
+        "is_visible": true,
+        "order": 4,
+        "category": 4
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 20,
+    "fields": {
+        "name": "Grilled chicken",
+        "slug": "grilled-chicken",
+        "description": "A perfect combination of tenderness and crispy crust. An ideal choice for true gourmets!",
+        "price": "20.00",
+        "photo": "dishes/dish-4.jpg",
+        "is_visible": true,
+        "order": 4,
+        "category": 4
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 21,
+    "fields": {
+        "name": "Steak with asparagus",
+        "slug": "steak-with-asparagus",
+        "description": "Tender meat, fresh taste. Perfect for gourmets!",
+        "price": "14.50",
+        "photo": "dishes/dish-6_IyqQT0V.jpg",
+        "is_visible": true,
+        "order": 6,
+        "category": 4
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 22,
+    "fields": {
+        "name": "Cake with cream",
+        "slug": "cake-with-cream",
+        "description": "Indulge in heavenly delight with our exquisite cake adorned with luscious cream. A sweet symphony for your taste buds awaits!",
+        "price": "3.25",
+        "photo": "dishes/dessert-1.jpg",
+        "is_visible": true,
+        "order": 6,
+        "category": 2
+    }
+},
+{
+    "model": "coffee.dish",
+    "pk": 23,
+    "fields": {
+        "name": "Raf",
+        "slug": "raf",
+        "description": "Espresso with delicate milk foam. Magical taste in every cup.",
+        "price": "3.10",
+        "photo": "dishes/menu-2_pGzCyEZ.jpg",
+        "is_visible": true,
+        "order": 4,
+        "category": 6
+    }
+},
+{
+    "model": "coffee.postcategory",
+    "pk": 1,
+    "fields": {
+        "name": "Coffee"
+    }
+},
+{
+    "model": "coffee.postcategory",
+    "pk": 2,
+    "fields": {
+        "name": "Travel"
+    }
+},
+{
+    "model": "coffee.postcategory",
+    "pk": 3,
+    "fields": {
+        "name": "Hotel"
+    }
+},
+{
+    "model": "coffee.postcategory",
+    "pk": 4,
+    "fields": {
+        "name": "Drinks"
+    }
+},
+{
+    "model": "coffee.postcategory",
+    "pk": 5,
+    "fields": {
+        "name": "Foods"
+    }
+},
+{
+    "model": "coffee.postcategory",
+    "pk": 6,
+    "fields": {
+        "name": "Tour"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 6,
+    "fields": {
+        "tag_name": "Life"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 7,
+    "fields": {
+        "tag_name": "Sport"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 8,
+    "fields": {
+        "tag_name": "Travel"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 9,
+    "fields": {
+        "tag_name": "Coffee"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 10,
+    "fields": {
+        "tag_name": "CafeDelights"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 11,
+    "fields": {
+        "tag_name": "FinnishBlueberryPie"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 13,
+    "fields": {
+        "tag_name": "CulinaryHeritage"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 14,
+    "fields": {
+        "tag_name": "NordicFlavors"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 15,
+    "fields": {
+        "tag_name": "SodaSensation"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 16,
+    "fields": {
+        "tag_name": "Drink"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 17,
+    "fields": {
+        "tag_name": "FizzAndFun"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 18,
+    "fields": {
+        "tag_name": "ThirstQuencher"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 19,
+    "fields": {
+        "tag_name": "CoffeeTour"
+    }
+},
+{
+    "model": "coffee.tag",
+    "pk": 20,
+    "fields": {
+        "tag_name": "CafeAdventure"
+    }
+},
+{
+    "model": "coffee.post",
+    "pk": 2,
+    "fields": {
+        "title": "Coffee: Enjoyment and Science in a Cup",
+        "content": "<p>Coffee is not just a beverage; it&#39;s a way of life, an art, and a science, all merging in one aromatic cloud. Over time, coffee has become an integral part of our daily existence, inspiring millions across the globe.</p>\r\n\r\n<p><span style=\"font-size:20px\"><em><strong>History of Coffee</strong></em></span></p>\r\n\r\n<p>&nbsp; &nbsp; The history of coffee stretches back into the depths of time. Legend has it that coffee was discovered in ancient Ethiopia when a shepherd noticed his goats becoming more energetic after munching on berries from a particular shrub. He decided to try the berries himself, thus discovering the invigorating properties of coffee beans.</p>\r\n\r\n<p>&nbsp; &nbsp; Soon, coffee began its journey around the world, becoming a commodity of trade and cultural exchange, establishing communal spaces known as coffeehouses where people gathered to discuss ideas, enjoy each other&#39;s company, and, of course, indulge in a cup of coffee.</p>\r\n\r\n<p><span style=\"font-size:20px\"><em><strong>Scientific Aspects of Coffee</strong></em></span></p>\r\n\r\n<p>&nbsp; &nbsp; Coffee contains numerous chemical compounds that affect the body. One key component is caffeine, which stimulates the central nervous system, aiding wakefulness and increasing concentration. Moreover, caffeine is known for its antioxidant properties, which may have beneficial effects on health.</p>\r\n\r\n<p>&nbsp; &nbsp; Ongoing scientific research continues to unveil new aspects of the benefits of coffee consumption, including its association with reducing the risk of various diseases such as heart disease, diabetes, and even some forms of cancer.</p>\r\n\r\n<p><span style=\"font-size:20px\"><em><strong>Cultural Significance of Coffee</strong></em></span></p>\r\n\r\n<p>&nbsp; &nbsp; Coffee plays a significant role in the culture of many nations. From Italian espresso to Turkish Turkisha, from Brazilian cappuccino to American latte, coffee beverages are diverse and unique, reflecting the traditions and preferences of each region.</p>\r\n\r\n<p>&nbsp; &nbsp; Moreover, coffee contributes to creating a cozy atmosphere. The aroma of freshly brewed coffee fills homes, cafes, and street corners, creating an ambiance for solitude or socializing, depending on people&#39;s preferences.</p>\r\n\r\n<p><span style=\"font-size:20px\"><em><strong>Conclusion</strong></em></span></p>\r\n\r\n<p>&nbsp; &nbsp; Coffee is more than just a drink; it&#39;s a symbol of a morning start, socializing with friends, creative inspiration, and cozy moments of solitude. It&#39;s a journey through tastes, aromas, and cultures, uniting people worldwide. With a cup of coffee in hand, one can savor not only its rich flavor but also the infinite world around us.</p>",
+        "date_posted": "2024-01-09T09:16:25.710Z",
+        "author": 1,
+        "is_visible": true,
+        "category": 1,
+        "tags": [
+            9,
+            6,
+            8
+        ]
+    }
+},
+{
+    "model": "coffee.post",
+    "pk": 4,
+    "fields": {
+        "title": "Turkish Coffee: The Art of Preparation and Cultural Heritage",
+        "content": "<p>Turkish coffee is more than just a beverage; it&rsquo;s a ritual, a cultural heritage, and an art deeply rooted in history. Its unique taste, aroma, and method of preparation make it a symbol of hospitality and social gatherings.</p>\r\n\r\n<p><strong>History of Turkish Coffee</strong></p>\r\n\r\n<p>The history of Turkish coffee is closely tied to Eastern culture. Introduced to Turkey from Arabia in the 16th century, it became part of daily life and the traditions of the local populace. Over time, Turkish coffee became an integral part of Turkish culture, evolving into a traditional drink consumed during various public and family events.</p>\r\n\r\n<p><strong>Preparation of Turkish Coffee</strong></p>\r\n\r\n<p>The preparation of Turkish coffee is an art that requires precision and attention to detail. Ground coffee beans, finely powdered, are mixed with water and sometimes a small amount of sugar in a special pot called a &quot;cezve.&quot; This brewing process over low heat involves several rounds of boiling, imparting a rich taste and aroma to the beverage.</p>\r\n\r\n<p><strong>Cultural Significance of Turkish Coffee</strong></p>\r\n\r\n<p>Turkish coffee plays a significant role in social life. It&#39;s not just a drink but a symbol of hospitality and traditions. Drinking Turkish coffee has become part of rituals and customs associated with welcoming guests, family celebrations, or simply enjoying cozy moments in the company of loved ones.</p>\r\n\r\n<p><strong>Cultural Presentation</strong></p>\r\n\r\n<p>Turkish coffee is often served with water and sweet treats, such as Turkish delights, to create a complete coffee experience. Traditionally, after consuming the coffee, the leftover grounds in the cup are used for fortune-telling &ndash; an ancient ritual that continues to live on in modern culture.</p>\r\n\r\n<p><strong>Conclusion</strong></p>\r\n\r\n<p>Turkish coffee is not just a beverage; it&rsquo;s a deeply embedded part of culture, symbolizing communication, traditions, and hospitality. Its distinct taste and aroma create a unique experience that encompasses not only the pleasure of taste but also the richness of Turkish history and traditions.</p>",
+        "date_posted": "2024-01-10T00:07:04.589Z",
+        "author": 1,
+        "is_visible": true,
+        "category": 1,
+        "tags": [
+            9,
+            8
+        ]
+    }
+},
+{
+    "model": "coffee.post",
+    "pk": 8,
+    "fields": {
+        "title": "Exploring the World, One Sip at a Time! 🌍☕",
+        "content": "<p>&nbsp;We believe that every cup of coffee is a journey waiting to unfold. Our beans are carefully sourced from the most exotic corners of the globe, each blend telling a unique story.</p>\r\n\r\n<p>Picture this: You, nestled in our cozy corner, sipping on a steaming cup of our signature brew. The rich, velvety aroma takes you to the bustling streets of Ethiopia, where the beans are sun-kissed and handpicked with care.</p>\r\n\r\n<p>As you indulge in the warmth, let your thoughts wander to the vibrant markets of Colombia, where the beans dance to a rhythm only coffee artisans know. The notes of chocolate and citrus in your cup transport you to the serene landscapes of Costa Rica, where coffee cultivation is an art passed down through generations.</p>\r\n\r\n<p>We invite you to not just enjoy coffee but to embark on a journey of flavors. Share your travel dreams with us, and let the magic of conversation intertwine with the magic in your mug. Where will your coffee passport take you today? Let&#39;s traverse the world together, one delicious sip at a time. ☕✈️&nbsp;</p>",
+        "date_posted": "2024-01-17T08:26:58.703Z",
+        "author": 1,
+        "is_visible": true,
+        "category": 2,
+        "tags": [
+            10,
+            9,
+            8
+        ]
+    }
+},
+{
+    "model": "coffee.post",
+    "pk": 9,
+    "fields": {
+        "title": "Delve into the rich history of our beloved Finnish Blueberry Pie! 🇫🇮🥧✨",
+        "content": "<p>This delightful creation traces its roots back to the heart of Finland, where the love for blueberries runs deep. In the charming villages and forested landscapes, blueberries are not just a fruit; they are a symbol of purity and the enchanting beauty of the Nordic wilderness.</p>\r\n\r\n<p>Our Finnish Blueberry Pie pays homage to this cultural icon. The recipe, passed down through generations, celebrates the artistry of Finnish bakers who perfected the delicate balance of sweetness and tartness. Each pie is a labor of love, using handpicked blueberries that reflect the pristine landscapes of Finland.</p>\r\n\r\n<p>As you savor a slice, envision the rustic kitchens of Finnish homes, where families gather to share stories and indulge in the warmth of this timeless dessert. The golden crust encapsulates the essence of tradition, while the burst of blueberries encapsulates the spirit of the Nordic countryside.</p>\r\n\r\n<p>Join us on a journey through time and taste with our Finnish Blueberry Pie. Immerse yourself in the cultural tapestry of Finland with every heavenly bite. This is more than a dessert; it&#39;s a connection to the soul of a nation. 🫐🌲&nbsp;</p>",
+        "date_posted": "2024-01-17T08:54:37.781Z",
+        "author": 1,
+        "is_visible": true,
+        "category": 5,
+        "tags": [
+            13,
+            11,
+            14
+        ]
+    }
+},
+{
+    "model": "coffee.post",
+    "pk": 10,
+    "fields": {
+        "title": "Step into a world where every sip is a celebration of taste at! 🥤✨",
+        "content": "<p>Our Soda Drinks are more than just beverages, they are a gateway to a realm of flavor exploration.</p>\r\n\r\n<p>Start your journey with our Classic Cola &ndash; an iconic blend that fizzes with nostalgia and timeless refreshment. The crisp symphony of carbonation and caramel undertones is a testament to the enduring allure of a classic.</p>\r\n\r\n<p>Venture into uncharted territory with our Exotic Fusion Soda, a harmonious dance of tropical fruits that promises to transport you to faraway lands. Let the tang of pineapple, passion fruit, and hints of mango tantalize your senses.</p>\r\n\r\n<p>For those seeking a burst of creativity, our Artisanal Soda Collection awaits. Indulge in the effervescent play of Sparkling Berry Bliss, where a medley of berries collides with bubbles, creating a sensation that lingers with every sip. Or opt for the invigorating Citrus Zing, a symphony of citrus fruits that awaken your taste buds with each fizz.</p>\r\n\r\n<p>Pair your chosen soda with our delightful treats, and let the pairing elevate your experience to new heights. We craft moments worth savoring. Join us for a sparkling rendezvous where each soda is a sip closer to happiness! 🍹✨</p>",
+        "date_posted": "2024-01-17T09:21:48.106Z",
+        "author": 1,
+        "is_visible": true,
+        "category": 4,
+        "tags": [
+            16,
+            17,
+            15,
+            18
+        ]
+    }
+},
+{
+    "model": "coffee.post",
+    "pk": 11,
+    "fields": {
+        "title": "Embark on a Culinary Staycation: Discover the Tranquil Retreat ! 🏨☕",
+        "content": "<p>Transform your day into an unforgettable retreat with us! 🏨✨Nestled in the heart of city, our cafe is more than just a culinary haven - it&#39;s a gateway to indulgence.</p>\r\n\r\n<p>Picture this: A cozy corner in our cafe, where the aroma of freshly brewed coffee mingles with the warmth of ambient lighting. It&#39;s a retreat within a retreat, a tranquil escape from the hustle and bustle of everyday life.</p>\r\n\r\n<p>Our cafe is designed to be a sensory oasis, where each sip and bite takes you on a journey of relaxation. Immerse yourself in the plush seating, soothing music, and the delightful symphony of flavors from our carefully crafted menu.</p>\r\n\r\n<p>Whether you&#39;re seeking a solo escape or a rendezvous with friends, we are &nbsp;your sanctuary. The ambiance mirrors the elegance of a boutique hotel, creating an atmosphere that invites you to linger, unwind, and create moments to cherish.</p>\r\n\r\n<p>Join us for a fusion of hospitality and gastronomy. Make your visit more than just a meal &ndash; make it an experience. Welcome to us, where every moment is a staycation. 🌟☕</p>",
+        "date_posted": "2024-01-17T09:36:13.739Z",
+        "author": 1,
+        "is_visible": true,
+        "category": 3,
+        "tags": [
+            9,
+            16,
+            6,
+            8
+        ]
+    }
+},
+{
+    "model": "coffee.post",
+    "pk": 12,
+    "fields": {
+        "title": "Get ready for a caffeine-fueled adventure with the Coffee Tour! ☕✈️",
+        "content": "<p>Embark on a journey through the art of coffee, where each cup tells a story and every sip is a passport stamp to flavor destinations.</p>\r\n\r\n<p>Join our expert baristas as they guide you through the origins of our carefully sourced beans, sharing the secrets behind the perfect roast and brew. Immerse yourself in the aromatic landscapes of Ethiopia, Colombia, and beyond, experiencing the diverse profiles each region contributes to our exceptional blends.</p>\r\n\r\n<p>From the first crackle of the coffee beans to the final pour, witness the craftsmanship behind every cup. Learn about the art of espresso, master the delicate pour-over technique, and savor the richness of our signature creations.</p>\r\n\r\n<p>We believe in turning coffee into a cultural expedition. Your Coffee Tour experience includes exclusive tastings, behind-the-scenes insights, and a journey of discovery that transcends the ordinary. Whether you&#39;re a coffee enthusiast or a curious explorer, this tour is your ticket to a world of flavors. Book your seat and let the aroma of adventure guide you! 🌍☕</p>",
+        "date_posted": "2024-01-17T09:42:09.046Z",
+        "author": 1,
+        "is_visible": true,
+        "category": 6,
+        "tags": [
+            20,
+            10,
+            9,
+            19,
+            6,
+            8
+        ]
+    }
+},
+{
+    "model": "coffee.postimage",
+    "pk": 3,
+    "fields": {
+        "post_image": "post_images/dish-3.jpg",
+        "post": 2
+    }
+},
+{
+    "model": "coffee.postimage",
+    "pk": 5,
+    "fields": {
+        "post_image": "post_images/Turkish_Coffee.jpeg",
+        "post": 4
+    }
+},
+{
+    "model": "coffee.postimage",
+    "pk": 6,
+    "fields": {
+        "post_image": "post_images/coffee.jpg",
+        "post": 8
+    }
+},
+{
+    "model": "coffee.postimage",
+    "pk": 7,
+    "fields": {
+        "post_image": "post_images/coffee_cup.jpg",
+        "post": 8
+    }
+},
+{
+    "model": "coffee.postimage",
+    "pk": 8,
+    "fields": {
+        "post_image": "post_images/Finnish_Blueberry_Pie_ZiOti4C.jpg",
+        "post": 9
+    }
+},
+{
+    "model": "coffee.postimage",
+    "pk": 9,
+    "fields": {
+        "post_image": "post_images/soda.jpg",
+        "post": 10
+    }
+},
+{
+    "model": "coffee.postimage",
+    "pk": 10,
+    "fields": {
+        "post_image": "post_images/hotel.jpg",
+        "post": 11
+    }
+},
+{
+    "model": "coffee.postimage",
+    "pk": 11,
+    "fields": {
+        "post_image": "post_images/CoffeeTour.jpg",
+        "post": 12
+    }
+},
+{
+    "model": "coffee.comment",
+    "pk": 2,
+    "fields": {
+        "post": 2,
+        "content": "Coffee",
+        "email": "u.juliana.serg@gmail.com",
+        "date_posted": "2024-01-10T00:03:07.253Z",
+        "author": "panda",
+        "parent": null
+    }
+},
+{
+    "model": "coffee.comment",
+    "pk": 3,
+    "fields": {
+        "post": 2,
+        "content": "1111",
+        "email": "user2@example.com",
+        "date_posted": "2024-01-11T09:27:41.036Z",
+        "author": "user2",
+        "parent": null
+    }
+},
+{
+    "model": "coffee.comment",
+    "pk": 4,
+    "fields": {
+        "post": 2,
+        "content": "56ш87ш57ш58ш",
+        "email": "u.juliana.serg@gmail.com",
+        "date_posted": "2024-01-15T13:02:35.505Z",
+        "author": "panda",
+        "parent": 2
+    }
+},
+{
+    "model": "coffee.order",
+    "pk": 30,
+    "fields": {
+        "order_id": "01205067-8932-4533-8325-ce6c4d3c9da8",
+        "order_date": "2024-01-18",
+        "order_time": "12:29:49.214",
+        "order_status": "Pending"
+    }
+},
+{
+    "model": "coffee.userdata",
+    "pk": 24,
+    "fields": {
+        "user": 1,
+        "order": 30,
+        "first_name": "USTIMOVA",
+        "last_name": "JULIA",
+        "street_name": "Туполева 5а",
+        "house_number": "27",
+        "phone": "0505030179",
+        "email_address": "u.juliana.serg@gmail.com",
+        "is_completed": false
+    }
+},
+{
+    "model": "coffee.orderdisheslist",
+    "pk": 25,
+    "fields": {
+        "order": 30,
+        "user_data": 24,
+        "dish": 20,
+        "price": "20.00",
+        "quantity": 1
+    }
+},
+{
+    "model": "coffee.orderdisheslist",
+    "pk": 26,
+    "fields": {
+        "order": 30,
+        "user_data": 24,
+        "dish": 19,
+        "price": "17.10",
+        "quantity": 1
+    }
+},
+{
+    "model": "main_app.mainmenuitems",
+    "pk": 1,
+    "fields": {
+        "title": "MENU",
+        "slug": "menu",
+        "url": "",
+        "is_anchor": true,
+        "is_manager_only": false,
+        "is_visible": true,
+        "order": 1
+    }
+},
+{
+    "model": "main_app.mainmenuitems",
+    "pk": 2,
+    "fields": {
+        "title": "BLOG",
+        "slug": "blog",
+        "url": "",
+        "is_anchor": true,
+        "is_manager_only": false,
+        "is_visible": true,
+        "order": 3
+    }
+},
+{
+    "model": "main_app.mainmenuitems",
+    "pk": 3,
+    "fields": {
+        "title": "SERVICES",
+        "slug": "services",
+        "url": "",
+        "is_anchor": true,
+        "is_manager_only": false,
+        "is_visible": false,
+        "order": 2
+    }
+},
+{
+    "model": "main_app.mainmenuitems",
+    "pk": 4,
+    "fields": {
+        "title": "ABOUT",
+        "slug": "about",
+        "url": "",
+        "is_anchor": true,
+        "is_manager_only": false,
+        "is_visible": true,
+        "order": 4
+    }
+},
+{
+    "model": "main_app.mainmenuitems",
+    "pk": 5,
+    "fields": {
+        "title": "SHOP",
+        "slug": "shop",
+        "url": "",
+        "is_anchor": true,
+        "is_manager_only": false,
+        "is_visible": true,
+        "order": 5
+    }
+},
+{
+    "model": "main_app.mainmenuitems",
+    "pk": 6,
+    "fields": {
+        "title": "CONTACT",
+        "slug": "contact",
+        "url": "",
+        "is_anchor": true,
+        "is_manager_only": false,
+        "is_visible": true,
+        "order": 6
+    }
+}
+]

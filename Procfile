@@ -1,0 +1,1 @@
+web: gunicorn diplom_cafe_2023.wsgi --log-file - --log-level debug
