@@ -40,7 +40,7 @@ DATABASE_URL = os.environ.get('DATABASE_URL')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://diplom-cafe-2023-3a0a49cec944.herokuapp.com']
+ALLOWED_HOSTS = ['diplom-cafe-2023-3a0a49cec944.herokuapp.com', 'localhost']
 
 # Application definition
 
