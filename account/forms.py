@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 from coffee.models import Comment
 
 
-# Create User Login Form
 class UserLoginForm(AuthenticationForm):
     """
     User Login Form.
@@ -73,8 +72,6 @@ class AnonymousMessageForm(forms.ModelForm):
                                                                                  'class': 'form-control',
                                                                                  'rows': '5',
                                                                                  'data-rule': 'minlen:4', }))
-
-    # parent_id = forms.HiddenInput(attrs={"id": 'parent_id'})
 
     class Meta:
         model = Comment

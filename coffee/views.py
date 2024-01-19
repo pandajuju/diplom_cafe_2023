@@ -160,18 +160,22 @@ class ContactPage(TemplateView):
         subject = request.POST.get('subject')
         message = request.POST.get('message')
         email = request.POST.get('email')
+
         if subject and message and email:
             try:
-                smtplib.SMTP_SSL()
-                send_mail(subject, message, email, ['u.juliana.serg@ukr.net'], False)
+                send_mail(
+                    subject,
+                    message,
+                    email,
+                    ['u.juliana.serg@ukr.net'],
+                    fail_silently=False,
+                )
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
+
             return HttpResponseRedirect(reverse_lazy('coffee:home'))
         else:
             return HttpResponse("Make sure all fields are entered and valid.")
-        # username = request.POST.get('username') if request.user.is_authenticated else None
-
-        # return HttpResponseRedirect('')
 
 
 class ShopPage(TemplateView):
