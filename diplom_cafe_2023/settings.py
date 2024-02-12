@@ -15,7 +15,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 import dj_database_url
 import secrets
-
 from django.contrib import staticfiles
 
 load_dotenv()
@@ -38,9 +37,10 @@ DATABASE_URL = os.environ.get('DATABASE_URL')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['diplom-cafe-2023-3a0a49cec944.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['coffee-diplom-2024-a78636ec3ed9.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -118,7 +118,6 @@ DATABASES = {
     }
 }
 
-
 db = dj_database_url.config()
 DATABASES['default'].update(db)
 
@@ -172,5 +171,5 @@ EMAIL_PORT = 2525
 EMAIL_HOST_USER = 'u.juliana.serg@ukr.net'
 EMAIL_HOST_PASSWORD = '12IWYDFxxk7VDV7I'
 EMAIL_USE_SSL = True
-# EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'u.juliana.serg@ukr.net'
+

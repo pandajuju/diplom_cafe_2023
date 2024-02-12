@@ -12,6 +12,9 @@ admin.site.register(PostImage)
 
 @admin.register(Dish)
 class DishAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for Dish model.
+    """
     prepopulated_fields = {'slug': ('name',)}
     list_display = ('id', 'category', 'name', 'price', 'is_visible', 'photo_src_tag')
     list_editable = ('category', 'name', 'price', 'is_visible')
@@ -27,6 +30,9 @@ class DishAdmin(admin.ModelAdmin):
 
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for Tag model.
+    """
     model = Tag
 
 
@@ -36,6 +42,9 @@ class PostImageInline(admin.TabularInline):
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for Post model.
+    """
     list_display = ('title', 'author', 'date_posted', 'category', 'get_tags', 'get_images')
     search_fields = ['title', 'content']
     list_filter = ('date_posted', 'author')
@@ -52,6 +61,9 @@ class PostAdmin(admin.ModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for Comment model.
+    """
     list_display = ('post_id', 'author', 'date_posted', 'email', 'parent_id',)
     search_fields = ['content']
     list_filter = ('date_posted', 'author')
@@ -59,17 +71,26 @@ class CommentAdmin(admin.ModelAdmin):
 
 @admin.register(OrderDishesList)
 class OrderDishesListAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for OrderDishesList model.
+    """
     list_display = ['dish', 'price', 'quantity']
     search_fields = ['dish__name']
 
 
 @admin.register(UserData)
 class UserDataAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for UserData model.
+    """
     list_display = ['first_name', 'last_name', 'street_name', 'house_number', 'phone', 'email_address']
     search_fields = ['first_name', 'last_name', 'email_address']
 
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for Order model.
+    """
     list_display = ['order_date', 'order_time', 'order_status']
     search_fields = ['order_status']
