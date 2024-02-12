@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center" style="margin: 10rem 0rem">
+            <div class="col-lg-6">
+                <h1 class="text-center mb-4">Edit booking</h1>
+                <form method="post">
+                    {% csrf_token %}
+                    {% for f in form %}
+                        <div class="mb-3 row">
+                            <label class="col-sm-4 col-form-label">{{ f.label }}</label>
+                            <div class="col-sm-8">
+                                {{ f }}
+                                <div class="form-error">{{ f.errors }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary me-md-2">Save</button>
+                        <a href="{% url 'manager:home' %}" class="btn btn-secondary">To reservations</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

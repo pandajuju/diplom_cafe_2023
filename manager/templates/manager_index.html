@@ -1,6 +1,22 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <h1>Home</h1>
-    <p>Home page content</p>
+    <div class="container">
+        <div style="margin: 10rem 0rem">
+            <h1 class="text-center" >Booking list</h1>
+            <div class="list-group mt-4">
+                {% for reservation in reservations %}
+                    <div class="list-group-item border mb-3" style="background-color: transparent; box-shadow: none;">
+                        <h5 class="mb-1 pt-3">{{ reservation.name }} {{ reservation.last_name }}</h5>
+                        <p class="mb-1">Phone number: {{ reservation.phone }}</p>
+                        <p class="mb-1">Date: {{ reservation.date }}</p>
+                        <p class="mb-1">Time: {{ reservation.time }}</p>
+                        <p class="mb-1">Message: {{ reservation.message }}</p>
+                        <a href="{% url 'manager:edit_reservations' reservation.id %}"
+                           class="btn btn-primary btn-sm float-right">Confirm</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
