@@ -37,8 +37,8 @@ DATABASE_URL = os.environ.get('DATABASE_URL')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+
 
 ALLOWED_HOSTS = ['coffee-diplom-2024-a78636ec3ed9.herokuapp.com', 'localhost']
 
